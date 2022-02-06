@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="BOARDREPORT" targetNamespace="http://tempuri.org/BOARDREPORT.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/BOARDREPORT.xsd" xmlns:mstns="http://tempuri.org/BOARDREPORT.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="BOARDREPORT" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="BOARD_DT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="OLDCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="YEAROFSTART" type="xs:date" minOccurs="0" />
+							<xs:element name="CCATEGORY" type="xs:string" minOccurs="0" />
+							<xs:element name="BOARDDISTSLNO" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="ADDR1" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDR2" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDR3" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDR4" type="xs:string" minOccurs="0" />
+							<xs:element name="BANK_BRNACH" type="xs:string" minOccurs="0" />
+							<xs:element name="BIE_CLERK_MOBILE" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="BIE_CLERK_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="BIEZONE" type="xs:string" minOccurs="0" />
+							<xs:element name="LOC_COLLEGE" type="xs:string" minOccurs="0" />
+							<xs:element name="LOI_GO_DATE" type="xs:date" minOccurs="0" />
+							<xs:element name="LOI_GO_NO" type="xs:string" minOccurs="0" />
+							<xs:element name="MANDALSLNO" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="MANDAL" type="xs:string" minOccurs="0" />
+							<xs:element name="PLAN_BRS_PROC_NO" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="PRIIC_MOBILE" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="PRIIC_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="RUN_STATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="SOCIETY_REGISTER_NO" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="IC_MOBILE" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="IC_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="REGISTERED_DATE" type="xs:date" minOccurs="0" />
+							<xs:element name="SOCIETYSLNO" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="REGISTERED_NO" type="xs:string" minOccurs="0" />
+							<xs:element name="MOBILE" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="ADDRESS1" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDRESS2" type="xs:string" minOccurs="0" />
+							<xs:element name="AFF_YEAROFSTART" type="xs:string" minOccurs="0" />
+							<xs:element name="AFFILT_EXT_UPTO" type="xs:string" minOccurs="0" />
+							<xs:element name="SOCT_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="CORRESPONDENTNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="ORG_SCIENCE_SEC" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="ORG_ARTS_SEC" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="ORG_TOTAL_SEC" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="ADD_SCIENCE_SEC" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="ADD_ARTS_SEC" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="ADD_TOTAL_SEC" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="GRANDTOTAL" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="BLD_RL_PERIOD_FROM" type="xs:date" minOccurs="0" />
+							<xs:element name="BLD_RL_PERIOD_TO" type="xs:date" minOccurs="0" />
+							<xs:element name="PG_RL_PERIOD_FROM" type="xs:date" minOccurs="0" />
+							<xs:element name="PG_RL_PERIOD_TO" type="xs:date" minOccurs="0" />
+							<xs:element name="BUILDING" type="xs:string" minOccurs="0" />
+							<xs:element name="PLAYGROUNDTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="LANDTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="BUILDINGTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="PLINTH_AREA" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="DIST_PG" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="PARK_AREA" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="FIRESLNO" type="xs:string" minOccurs="0" />
+							<xs:element name="NOCSLNO" type="xs:string" minOccurs="0" />
+							<xs:element name="SANITORYSLNO" type="xs:string" minOccurs="0" />
+							<xs:element name="STRUCTURALSLNO" type="xs:string" minOccurs="0" />
+							<xs:element name="COURT_CASES" type="xs:string" minOccurs="0" />
+							<xs:element name="RESTART" type="xs:string" minOccurs="0" />
+							<xs:element name="PENT_IMPOSED" type="xs:string" minOccurs="0" />
+							<xs:element name="CLG_CH_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="AFFPAY_TYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="DD_NO" type="xs:string" minOccurs="0" />
+							<xs:element name="MAG_AMONT" type="xs:float" minOccurs="0" />
+							<xs:element name="SHIFTING_PEN_AMT" type="xs:float" minOccurs="0" />
+							<xs:element name="SOC_NAME_CH_AMT" type="xs:float" minOccurs="0" />
+							<xs:element name="COURT_CASES_AMT" type="xs:float" minOccurs="0" />
+							<xs:element name="RESTART_AMT" type="xs:float" minOccurs="0" />
+							<xs:element name="PENT_YEAR" type="xs:string" minOccurs="0" />
+							<xs:element name="PENT_PAID" type="xs:string" minOccurs="0" />
+							<xs:element name="PENT_DUE" type="xs:string" minOccurs="0" />
+							<xs:element name="CLG_PEN_AMTSHIFTING" type="xs:string" minOccurs="0" />
+							<xs:element name="DUE_MAG_AMT" type="xs:float" minOccurs="0" />
+							<xs:element name="SURPLUS_BIE_AMT" type="xs:float" minOccurs="0" />
+							<xs:element name="APPLICATION_FEE" type="xs:float" minOccurs="0" />
+							<xs:element name="ORG_SEC_FEE" type="xs:float" minOccurs="0" />
+							<xs:element name="ADD_SEC_FEE" type="xs:float" minOccurs="0" />
+							<xs:element name="INSP_FEE" type="xs:float" minOccurs="0" />
+							<xs:element name="LATE_FEE" type="xs:float" minOccurs="0" />
+							<xs:element name="DD_AMT" type="xs:float" minOccurs="0" />
+							<xs:element name="AFFYEAR" type="xs:string" minOccurs="0" />
+							<xs:element name="BANKNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="AFFEXTDUPTO" type="xs:string" minOccurs="0" />
+							<xs:element name="FDRDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="MATURITY_DATE" type="xs:date" minOccurs="0" />
+							<xs:element name="RELEASEDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="FDRNO" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="AMOUNT" type="xs:float" minOccurs="0" />
+							<xs:element name="FDRRELEASE" type="xs:string" minOccurs="0" />
+							<xs:element name="FDRBANKNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="DISTNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="SECLANG" type="xs:string" minOccurs="0" />
+							<xs:element name="MEDIUM" type="xs:string" minOccurs="0" />
+							<xs:element name="GROUPNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="SHIFTING_1" type="xs:string" minOccurs="0" />
+							<xs:element name="DDDATE" type="xs:date" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

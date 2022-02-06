@@ -1,0 +1,26 @@
+
+TR.head {
+	PADDING-BOTTOM: 1px; FONT: menu; CURSOR: hand; COLOR: menutext; PADDING-TOP: 0px; POSITION: relative; ; TOP: expression(document.all["divItems"].scrollTop-1); HEIGHT: 20px; BACKGROUND-COLOR: #fce5b4
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #fce5b4; SCROLLBAR-HIGHLIGHT-COLOR: #bad6fc; OVERFLOW: hidden; SCROLLBAR-SHADOW-COLOR: black; SCROLLBAR-3DLIGHT-COLOR: #ffeac1; SCROLLBAR-ARROW-COLOR: black; SCROLLBAR-TRACK-COLOR: white; SCROLLBAR-DARKSHADOW-COLOR: white; BACKGROUND-COLOR: #996666
+}
+.tdganjil {
+	HEIGHT: 20px; BACKGROUND-COLOR: #ffffff
+}
+.tdganjil TD {
+	BORDER-RIGHT: silver 1px solid
+}
+.tdgenap {
+	HEIGHT: 20px; BACKGROUND-COLOR: #fdf5e6
+}
+.tdgenap TD {
+	BORDER-RIGHT: silver 1px solid
+}
+/* CheckBoxList Text Wrapping */
+
+    .ChkLstnowrap="nowrap" tr td label
+    {
+        white-space:nowrap;
+        overflow:hidden;
+    }

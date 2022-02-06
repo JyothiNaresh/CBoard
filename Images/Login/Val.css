@@ -1,0 +1,14 @@
+body
+{
+}
+.ListboxVal
+{
+	border-left:lightsteelblue 1px solid;
+	border-right:lightsteelblue 1px solid;
+	border-top:lightsteelblue 1px solid;
+	border-bottom:lightsteelblue 1px solid;
+	color:Navy;
+	font-size:medium;
+	font-family:Calibri;
+	text-decoration:'underline';
+	}

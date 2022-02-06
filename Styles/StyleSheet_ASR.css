@@ -1,0 +1,336 @@
+ 
+ body
+{
+	SCROLLBAR-FACE-COLOR: #ebded6;
+	margin: 0px;
+	SCROLLBAR-ARROW-COLOR: black;
+}
+td {
+	font-family: Verdana;
+	font-size: 11px;
+}
+.DarkColor {
+	background-color: #B8773D;
+}
+.LightColor {
+	background-color: #EBDED6;
+}
+.Heading {
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #B8773D;
+	text-transform: uppercase;
+
+}
+.MainTable {
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+.TopLine {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E3C9B1;
+}
+.FormNo {
+	font-family: Verdana;
+	font-size: 11px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #B8773D;
+	border-right-color: #B8773D;
+	border-bottom-color: #B8773D;
+	border-left-color: #B8773D;
+	height: 17px;
+	width: 125px;
+	margin-right: 2px;
+	margin-left: 5px;
+
+
+}
+.FormNoLable {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #B8773D;
+}
+.SubHeading {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+
+}
+.TdBorder {
+	background-color: #E4C7AD;
+	height: 4px;
+}
+.TableBorder {
+	border: 1px solid #B8773D;
+}
+.Lables {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #663300;
+	text-align: left;
+	background-color: #EBDED6;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CDC3BD;
+	
+
+}
+
+.ControlsBg {
+	background-color: #F2ECE9;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CDC3BD;
+	padding-left: 3px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+
+
+
+}
+.SubHeading1 {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-left: 11px;
+	background-color: #B8773D;
+
+
+}
+input {
+	border: 1px solid #7F9DB9;
+	height: 17px;
+	width: 120px;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #91521A;
+
+
+
+}
+select {
+	background-color: #F2EEEB;
+	height: 15px;
+	width: 120px;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #91521A;
+	border: 1px solid #7F9DB9;
+
+}
+.HomeText {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #764D27;
+	text-align: right;
+	padding-right: 2px;
+	height: 20px;
+
+
+
+}
+frame {
+	cursor: crosshair;
+}
+.button {
+	
+	height: 22px;
+	width: 88px;
+}
+
+
+
+
+.GridMain
+{
+	 font-size:11px; 
+	 font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	 border-width: 0px;
+	 background-color:#EBDED6;
+	 color:  #663300;
+	 border-color:  #EBDED6;
+	 padding:3; 
+	
+}
+
+.GridHeader
+{
+	 font-family:Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	 font-size: 11px;
+	 font-style: normal;
+	 font-variant: normal;
+ 	 text-decoration: none;
+ 	 height:10pt;	
+ 	 background-color: #B8773D;
+ 	 color: #FFFFFF;
+ 	 font-weight:bold;
+	
+}
+
+.GridItem
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	font-size:11px;
+	color:#663300; 					
+	text-decoration:none;
+	line-height: 10pt;
+	background-color: #EBDED6;	
+	
+}
+
+
+.GridAlternateItem
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	font-size:11px;
+	color: #663300; 		
+	text-decoration:none;
+	line-height: 10pt;
+	background-color:#EBDED6;	
+}
+
+.GridPager
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	font-size:11px;
+	color:  #FFFFFF;				
+	text-decoration:none;
+	line-height: 10pt;
+	background-color: #B8773D;
+	text-align:center;
+	font-weight:bold;
+		
+}
+
+
+ 
+ 
+ 
+/* Div container to wrap the datagrid */
+
+div#divPayReg 
+
+{
+
+      width: 962;
+
+      height: 254px;
+
+      overflow: auto;
+
+}
+
+td.lockedpayreg, th.lockedpayreg 
+
+{
+
+      /*font-family: Verdana;*/
+
+      /*font-size: 11px;*/
+
+      /*font-weight: bold;*/
+
+      /*color: #2A2A2A;*/
+
+      /*background-color: #e2e2e2;*/
+
+      /*height: 20px;*/
+
+      /*border-top-width: 0px;*/
+
+      border-top-style: solid;
+
+      border-bottom-style: none;
+
+      /*text-align: left;*/
+
+      margin-left:10;
+
+      /*border-right: 1px solid silver;*/
+
+      position:relative;
+
+      cursor: default;
+
+      /*white-space:nowrap;*/
+
+      /*IE5+ only*/
+	/* divPayReg is Div Tag id/Name in */
+
+      left: expression(document.getElementById("divPayReg").scrollLeft-1);
+
+}
+
+ 
+
+/* Locks table header 
+
+th.VLocked, td.VLocked, th.TLocked, td.TLocked{*/
+
+ th
+
+ {
+
+      /*font-family: Verdana;
+
+      font-size: 11px;
+
+      font-weight: bold;
+
+      color: #2A2A2A;
+
+      background-color: #c4e7c4;
+
+      height: 20px;
+
+      border-top-width: 0px;*/
+
+      border-top-style: none;
+
+      border-bottom-style: none;
+
+      /*text-align: center;*/
+
+    position:relative;
+
+    cursor: default;
+
+    /*white-space:nowrap;*/
+
+      /*top:expression(this.offsetParent.scrollTop);*/
+
+      /*IE5+ only */
+
+    top: expression(document.getElementById("divPayReg").scrollTop-1);
+
+      z-index: 10;
+
+}
+
+/* Keeps the header as the top most item. Important for top left item*/
+
+th.lockedpayreg {z-index: 99;}
+

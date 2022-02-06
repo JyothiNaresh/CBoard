@@ -1,0 +1,2148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.6030</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73CC0908-D7A8-442A-A752-1623E17FF87C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>CollegeBoard</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>CollegeBoard</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CollegeBoard.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CollegeBoard.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <Reference Include="CRVsPackageLib, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <Name>ICSharpCode.SharpZipLib</Name>
+      <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <Name>Microsoft.Web.UI.WebControls</Name>
+      <HintPath>..\..\..\Program Files\Microsoft Internet Explorer WebControls\Microsoft.Web.UI.WebControls.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\iewebcontrols</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="PasswordEncrypt">
+      <Name>PasswordEncrypt</Name>
+      <HintPath>DLLS\PasswordEncrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Name>System.EnterpriseServices</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OracleClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class\clsError.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\Commonfunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class\ErrorLog.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Examination\BankChallan\BANKCHLLAN.aspx.vb">
+      <DependentUpon>BANKCHLLAN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BankChallan\BANKSTUDENTCHALLAN.vb">
+      <DependentUpon>BANKSTUDENTCHALLAN1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BankChallan\BANKSTUDENTCHALLAN11.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BANKSTUDENTCHALLAN1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Examination\BankChallan\ICICIBANKCHALLAN.vb">
+      <DependentUpon>ICICIBANKCHALLAN1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BankChallan\ICICIBANKCHALLAN11.vb">
+      <DependentUpon>ICICIBANKCHALLAN1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\BoardDetailsEntry.aspx.vb">
+      <DependentUpon>BoardDetailsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Certificates\TransferCertificate.aspx.vb">
+      <DependentUpon>TransferCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Masters\BoardCollegeEntry.aspx.vb">
+      <DependentUpon>BoardCollegeEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Masters\BoardCollegeHome.aspx.vb">
+      <DependentUpon>BoardCollegeHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Masters\MastersBatch.aspx.vb">
+      <DependentUpon>MastersBatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Masters\MastersHome.aspx.vb">
+      <DependentUpon>MastersHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Masters\MasterSingle.aspx.vb">
+      <DependentUpon>MasterSingle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BoardReport-1.aspx.vb">
+      <DependentUpon>BoardReport-1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BOARDRPT.vb">
+      <DependentUpon>BOARDRPT1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BOARDRPT11.vb">
+      <DependentUpon>BOARDRPT1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BOARDRPT2.vb">
+      <DependentUpon>BOARDRPT21.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BOARDRPT211.vb">
+      <DependentUpon>BOARDRPT21.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BOARDRPT3.vb">
+      <DependentUpon>BOARDRPT31.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BOARDRPT311.vb">
+      <DependentUpon>BOARDRPT31.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Reports\BOARDRPTS.aspx.vb">
+      <DependentUpon>BOARDRPTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\AcademicYearExambranchBoardcollegeMapping.aspx.vb">
+      <DependentUpon>AcademicYearExambranchBoardcollegeMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\AcaEbBrdColMapBatch.aspx.vb">
+      <DependentUpon>AcaEbBrdColMapBatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardCollegeBranchMapping.aspx.designer.vb">
+      <DependentUpon>BoardCollegeBranchMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardCollegeBranchMapping.aspx.vb">
+      <DependentUpon>BoardCollegeBranchMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardDetailsEntryBenglore.aspx.designer.vb">
+      <DependentUpon>BoardDetailsEntryBenglore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardDetailsEntryBenglore.aspx.vb">
+      <DependentUpon>BoardDetailsEntryBenglore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardDetailsEntry_Chennai.aspx.designer.vb">
+      <DependentUpon>BoardDetailsEntry_Chennai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardDetailsEntry_Chennai.aspx.vb">
+      <DependentUpon>BoardDetailsEntry_Chennai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardDetails_CBSE.aspx.designer.vb">
+      <DependentUpon>BoardDetails_CBSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\BoardDetails_CBSE.aspx.vb">
+      <DependentUpon>BoardDetails_CBSE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntry.aspx.vb">
+      <DependentUpon>StudentBoardDetailsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryDummy.aspx.vb">
+      <DependentUpon>StudentBoardDetailsEntryDummy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryNew.aspx.vb">
+      <DependentUpon>StudentBoardDetailsEntryNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryNonAdmitted.aspx.vb">
+      <DependentUpon>StudentBoardDetailsEntryNonAdmitted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntrySupplementary.aspx.vb">
+      <DependentUpon>StudentBoardDetailsEntrySupplementary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryTC.aspx.vb">
+      <DependentUpon>StudentBoardDetailsEntryTC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsRes.aspx.designer.vb">
+      <DependentUpon>StudentBoardDetailsRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsRes.aspx.vb">
+      <DependentUpon>StudentBoardDetailsRes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\StudentTCRemarksEntry.aspx.vb">
+      <DependentUpon>StudentTCRemarksEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardEnrollments\Transactions\TcRequetAprolls.aspx.vb">
+      <DependentUpon>TcRequetAprolls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Affilation_Dt.aspx.vb">
+      <DependentUpon>Affilation_Dt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Building_PG_Dt.aspx.vb">
+      <DependentUpon>Building_PG_Dt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Cetificates_Dt.aspx.vb">
+      <DependentUpon>Cetificates_Dt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Cetificates_Dtnew.aspx.vb">
+      <DependentUpon>Cetificates_Dtnew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\FDR_Dt.aspx.vb">
+      <DependentUpon>FDR_Dt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Penalties_Dt.aspx.vb">
+      <DependentUpon>Penalties_Dt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Popcertificate.aspx.designer.vb">
+      <DependentUpon>Popcertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Popcertificate.aspx.vb">
+      <DependentUpon>Popcertificate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\SCHCertificateNew.aspx.designer.vb">
+      <DependentUpon>SCHCertificateNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\BoardSection\SCHCertificateNew.aspx.vb">
+      <DependentUpon>SCHCertificateNew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\School_TCDetails_Entry.aspx.vb">
+      <DependentUpon>School_TCDetails_Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Sections_Dt.aspx.vb">
+      <DependentUpon>Sections_Dt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\SocietyDetails.aspx.vb">
+      <DependentUpon>SocietyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\BoardSection\Society_Clg_Mapping.aspx.vb">
+      <DependentUpon>Society_Clg_Mapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Html\Content.aspx.vb">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Html\Guru.aspx.vb">
+      <DependentUpon>Guru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Html\Header.aspx.vb">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Objection_ExamDate_Creation.aspx.vb">
+      <DependentUpon>Objection_ExamDate_Creation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Objection_ExamName_Entry.aspx.vb">
+      <DependentUpon>Objection_ExamName_Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Objection_ObjectionEntry.aspx.vb">
+      <DependentUpon>Objection_ObjectionEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Objection_ObjectionsEntry.aspx.vb">
+      <DependentUpon>Objection_ObjectionsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Report\Objection_FinalKey.aspx.vb">
+      <DependentUpon>Objection_FinalKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Report\Objection_ObjectionApproval.aspx.vb">
+      <DependentUpon>Objection_ObjectionApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Transactions\Exam_Objections_Approval.aspx.vb">
+      <DependentUpon>Exam_Objections_Approval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Transactions\Exam_Objections_Entry.aspx.vb">
+      <DependentUpon>Exam_Objections_Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Transactions\Exam_Objections_FinalKeyCorrections.aspx.vb">
+      <DependentUpon>Exam_Objections_FinalKeyCorrections.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Transactions\Exam_Objections_Lock.aspx.vb">
+      <DependentUpon>Exam_Objections_Lock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\KeyObjections\Transactions\Exam_Objections_Print.aspx.vb">
+      <DependentUpon>Exam_Objections_Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\NoticeBoard\NoticeDisplay.aspx.vb">
+      <DependentUpon>NoticeDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\NoticeBoard\NoticeDisplaySettings.aspx.vb">
+      <DependentUpon>NoticeDisplaySettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\NoticeBoard\NoticeEntry.aspx.vb">
+      <DependentUpon>NoticeEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\NoticeBoard\NoticeView.aspx.vb">
+      <DependentUpon>NoticeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardCBSEHome.aspx.designer.vb">
+      <DependentUpon>BoardCBSEHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardCBSEHome.aspx.vb">
+      <DependentUpon>BoardCBSEHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardCBSETCReport.aspx.designer.vb">
+      <DependentUpon>BoardCBSETCReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardCBSETCReport.aspx.vb">
+      <DependentUpon>BoardCBSETCReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardCCPreview.aspx.vb">
+      <DependentUpon>BoardCCPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReport.aspx.designer.vb">
+      <DependentUpon>BoardDetailsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReport.aspx.vb">
+      <DependentUpon>BoardDetailsReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportAudit.aspx.designer.vb">
+      <DependentUpon>BoardDetailsReportAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportAudit.aspx.vb">
+      <DependentUpon>BoardDetailsReportAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportChennai.aspx.designer.vb">
+      <DependentUpon>BoardDetailsReportChennai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportChennai.aspx.vb">
+      <DependentUpon>BoardDetailsReportChennai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportKarnataka.aspx.designer.vb">
+      <DependentUpon>BoardDetailsReportKarnataka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportKarnataka.aspx.vb">
+      <DependentUpon>BoardDetailsReportKarnataka.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportMumbai.aspx.designer.vb">
+      <DependentUpon>BoardDetailsReportMumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardDetailsReportMumbai.aspx.vb">
+      <DependentUpon>BoardDetailsReportMumbai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardKarnatakaHome.aspx.designer.vb">
+      <DependentUpon>BoardKarnatakaHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardKarnatakaHome.aspx.vb">
+      <DependentUpon>BoardKarnatakaHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardkarnatakReport.aspx.designer.vb">
+      <DependentUpon>BoardkarnatakReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardkarnatakReport.aspx.vb">
+      <DependentUpon>BoardkarnatakReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCCBSEPreview.aspx.designer.vb">
+      <DependentUpon>BoardTCCBSEPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCCBSEPreview.aspx.vb">
+      <DependentUpon>BoardTCCBSEPreview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcHome.aspx.vb">
+      <DependentUpon>BoardTcHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcHomeDummy.aspx.vb">
+      <DependentUpon>BoardTcHomeDummy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCHomeMumbai.aspx.designer.vb">
+      <DependentUpon>BoardTCHomeMumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCHomeMumbai.aspx.vb">
+      <DependentUpon>BoardTCHomeMumbai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcHomeOthers.aspx.designer.vb">
+      <DependentUpon>BoardTcHomeOthers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcHomeOthers.aspx.vb">
+      <DependentUpon>BoardTcHomeOthers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCPreview.aspx.vb">
+      <DependentUpon>BoardTCPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCPreviewKarnataka.aspx.designer.vb">
+      <DependentUpon>BoardTCPreviewKarnataka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCPreviewKarnataka.aspx.vb">
+      <DependentUpon>BoardTCPreviewKarnataka.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCPreviewMumbai.aspx.designer.vb">
+      <DependentUpon>BoardTCPreviewMumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCPreviewMumbai.aspx.vb">
+      <DependentUpon>BoardTCPreviewMumbai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCReport.aspx.vb">
+      <DependentUpon>BoardTCReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcReportChennai.aspx.designer.vb">
+      <DependentUpon>BoardTcReportChennai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcReportChennai.aspx.vb">
+      <DependentUpon>BoardTcReportChennai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCReportMumbai.aspx.designer.vb">
+      <DependentUpon>BoardTCReportMumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCReportMumbai.aspx.vb">
+      <DependentUpon>BoardTCReportMumbai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcReportOthers.aspx.designer.vb">
+      <DependentUpon>BoardTcReportOthers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTcReportOthers.aspx.vb">
+      <DependentUpon>BoardTcReportOthers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\BoardTCReportTS.aspx.vb">
+      <DependentUpon>BoardTCReportTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\CCGenerateCBSE.aspx.designer.vb">
+      <DependentUpon>CCGenerateCBSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\CCGenerateCBSE.aspx.vb">
+      <DependentUpon>CCGenerateCBSE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\CCGenerateMumbai.aspx.designer.vb">
+      <DependentUpon>CCGenerateMumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\CCGenerateMumbai.aspx.vb">
+      <DependentUpon>CCGenerateMumbai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\CCGenerateNew.aspx.vb">
+      <DependentUpon>CCGenerateNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\CCGenerateNewTS.aspx.vb">
+      <DependentUpon>CCGenerateNewTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\ConductCertificate.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConductCertificate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\ConductcertK3.vb">
+      <DependentUpon>ConductcertK3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\Dummy.aspx.vb">
+      <DependentUpon>Dummy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\MumbaiStudentMarksReport.aspx.designer.vb">
+      <DependentUpon>MumbaiStudentMarksReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\MumbaiStudentMarksReport.aspx.vb">
+      <DependentUpon>MumbaiStudentMarksReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\SchCertificatePerview.aspx.vb">
+      <DependentUpon>SchCertificatePerview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\SchConductcertK33.vb">
+      <DependentUpon>SchConductcertK3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\SchoolCCGeneratenew.aspx.vb">
+      <DependentUpon>SchoolCCGeneratenew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\SchoolCCPreview.aspx.vb">
+      <DependentUpon>SchoolCCPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\SchoolCndCertNew.aspx.vb">
+      <DependentUpon>SchoolCndCertNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\SchoolTcHome.aspx.vb">
+      <DependentUpon>SchoolTcHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\SchStuCertificate.aspx.vb">
+      <DependentUpon>SchStuCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateCBSE.aspx.designer.vb">
+      <DependentUpon>TcGenerateCBSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateCBSE.aspx.vb">
+      <DependentUpon>TcGenerateCBSE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateChennai.aspx.designer.vb">
+      <DependentUpon>TcGenerateChennai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateChennai.aspx.vb">
+      <DependentUpon>TcGenerateChennai.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGeneratekarnataka.aspx.designer.vb">
+      <DependentUpon>TcGeneratekarnataka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGeneratekarnataka.aspx.vb">
+      <DependentUpon>TcGeneratekarnataka.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateMumbai.aspx.designer.vb">
+      <DependentUpon>TcGenerateMumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateMumbai.aspx.vb">
+      <DependentUpon>TcGenerateMumbai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateNew.aspx.vb">
+      <DependentUpon>TcGenerateNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TcGenerateNewTS.aspx.vb">
+      <DependentUpon>TcGenerateNewTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TCRPTv2.vb">
+      <DependentUpon>TCRPTv2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TCRPTv21.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TCRPTv2.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\BoardReports\TCSummary.aspx.vb">
+      <DependentUpon>TCSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\TextReports\CollegeCodeWiseReport.aspx.designer.vb">
+      <DependentUpon>CollegeCodeWiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examination\Reports\TextReports\CollegeCodeWiseReport.aspx.vb">
+      <DependentUpon>CollegeCodeWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\TextReports\PFDetails.aspx.vb">
+      <DependentUpon>PFDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\TextReports\StudentBoardDetailsTxt.aspx.vb">
+      <DependentUpon>StudentBoardDetailsTxt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\TextReports\TxtBoardReport.aspx.vb">
+      <DependentUpon>TxtBoardReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Reports\TextReports\TxtBoardReportAll.aspx.vb">
+      <DependentUpon>TxtBoardReportAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\CreateDynamicTree.aspx.vb">
+      <DependentUpon>CreateDynamicTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\CreateNodes.aspx.vb">
+      <DependentUpon>CreateNodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\CreateOperators.aspx.vb">
+      <DependentUpon>CreateOperators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\CreateOperatorsNew.aspx.vb">
+      <DependentUpon>CreateOperatorsNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\CreateTree.aspx.vb">
+      <DependentUpon>CreateTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\CreateUsers.aspx.vb">
+      <DependentUpon>CreateUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\DatabaseConnections.aspx.vb">
+      <DependentUpon>DatabaseConnections.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\EmpEBMapping.aspx.vb">
+      <DependentUpon>EmpEBMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\EmpEbMappingView.aspx.vb">
+      <DependentUpon>EmpEbMappingView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\FrmSecurityMapping.aspx.vb">
+      <DependentUpon>FrmSecurityMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\KeyObjCombSingle.aspx.vb">
+      <DependentUpon>KeyObjCombSingle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\KeyObj_Combinations.aspx.vb">
+      <DependentUpon>KeyObj_Combinations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\KeyObj_Comb_View.aspx.vb">
+      <DependentUpon>KeyObj_Comb_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\MacRegister.aspx.vb">
+      <DependentUpon>MacRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\ModifyDynTree.aspx.vb">
+      <DependentUpon>ModifyDynTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\ModifyNodes.aspx.vb">
+      <DependentUpon>ModifyNodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\ModifyTree.aspx.vb">
+      <DependentUpon>ModifyTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\MTMUserExamBranch.aspx.vb">
+      <DependentUpon>MTMUserExamBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\NewForm.aspx.vb">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\PasswordFound.aspx.vb">
+      <DependentUpon>PasswordFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\StaffUserCombikeyView.aspx.vb">
+      <DependentUpon>StaffUserCombikeyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\StaffUserWiseCombinationkey.aspx.vb">
+      <DependentUpon>StaffUserWiseCombinationkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserAccess.aspx.vb">
+      <DependentUpon>UserAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserCombikeyView.aspx.vb">
+      <DependentUpon>UserCombikeyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserDetailsPopUp.aspx.vb">
+      <DependentUpon>UserDetailsPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserIpBlock\UserIPHome.aspx.vb">
+      <DependentUpon>UserIPHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserIpBlock\UserWiseIPBlock.aspx.vb">
+      <DependentUpon>UserWiseIPBlock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserPermit.aspx.vb">
+      <DependentUpon>UserPermit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserRegistrationTransfor.aspx.vb">
+      <DependentUpon>UserRegistrationTransfor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserTree.aspx.vb">
+      <DependentUpon>UserTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UsertypewiseUserDetails.aspx.vb">
+      <DependentUpon>UsertypewiseUserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserWiseCombinationkey.aspx.vb">
+      <DependentUpon>UserWiseCombinationkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserWiseSingleCombkey.aspx.vb">
+      <DependentUpon>UserWiseSingleCombkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserWiseSubbatchPermisionBatch.aspx.vb">
+      <DependentUpon>UserWiseSubbatchPermisionBatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserWiseSubbatchPermisionSingle.aspx.vb">
+      <DependentUpon>UserWiseSubbatchPermisionSingle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\UserWiseSubbatchPermissionView.aspx.vb">
+      <DependentUpon>UserWiseSubbatchPermissionView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\ValidationsUsTo.aspx.vb">
+      <DependentUpon>ValidationsUsTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\Security\ViewAllUsers.aspx.vb">
+      <DependentUpon>ViewAllUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\AddressInfo.ascx.vb">
+      <DependentUpon>AddressInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\Common\CombinationSelectionInfo.ascx.vb">
+      <DependentUpon>CombinationSelectionInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\Common\DropdownCheckList.aspx.vb">
+      <DependentUpon>DropdownCheckList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\Common\ExamsStudentInfoSelection.ascx.vb">
+      <DependentUpon>ExamsStudentInfoSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\Common\ReportMainSelection.ascx.vb">
+      <DependentUpon>ReportMainSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\Common\VcDoZoneRegionSelection.ascx.vb">
+      <DependentUpon>VcDoZoneRegionSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\Reports\ExamInfoSelection.ascx.vb">
+      <DependentUpon>ExamInfoSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examination\UserControls\ResultsControls\UCResultDetailsSelection.ascx.vb">
+      <DependentUpon>UCResultDetailsSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="home.aspx.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Common.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\ErrorMessages.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\J-Graph.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\modCommon.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\NewTableReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\TableReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RD\CommitT.aspx.vb">
+      <DependentUpon>CommitT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RD\DataGridRelation.aspx.vb">
+      <DependentUpon>DataGridRelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RD\DataValidator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RD\MacRD.aspx.vb">
+      <DependentUpon>MacRD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RD\MailsRd.aspx.vb">
+      <DependentUpon>MailsRd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RD\Result.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RD\Results.aspx.vb">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RD\SSC.aspx.vb">
+      <DependentUpon>SSC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedirectPage.aspx.vb">
+      <DependentUpon>RedirectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="DLLS\CRVsPackageLib.dll" />
+    <Content Include="DLLS\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLLS\PasswordEncrypt.dll" />
+    <Content Include="Examination\BankChallan\BANKCHLLAN.aspx" />
+    <Content Include="Examination\BankChallan\BANKSTUDCOPY.xsd" />
+    <Content Include="Examination\BoardEnrollments\BoardDetailsEntry.aspx" />
+    <Content Include="Examination\BoardEnrollments\Certificates\TransferCertificate.aspx" />
+    <Content Include="Examination\BoardEnrollments\Masters\BoardCollegeEntry.aspx" />
+    <Content Include="Examination\BoardEnrollments\Masters\BoardCollegeHome.aspx" />
+    <Content Include="Examination\BoardEnrollments\Masters\MastersBatch.aspx" />
+    <Content Include="Examination\BoardEnrollments\Masters\MastersHome.aspx" />
+    <Content Include="Examination\BoardEnrollments\Masters\MasterSingle.aspx" />
+    <Content Include="Examination\BoardEnrollments\Reports\BoardReport-1.aspx" />
+    <Content Include="Examination\BoardEnrollments\Reports\BOARDREPORT.xsd" />
+    <Content Include="Examination\BoardEnrollments\Reports\BOARDRPTS.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\AcademicYearExambranchBoardcollegeMapping.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\AcaEbBrdColMapBatch.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\BoardCollegeBranchMapping.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\BoardDetailsEntryBenglore.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\BoardDetailsEntry_Chennai.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\BoardDetails_CBSE.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntry.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryDummy.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryNew.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryNonAdmitted.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntrySupplementary.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryTC.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsRes.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\StudentTCRemarksEntry.aspx" />
+    <Content Include="Examination\BoardEnrollments\Transactions\TcRequetAprolls.aspx" />
+    <Content Include="Examination\BoardSection\Affilation_Dt.aspx" />
+    <Content Include="Examination\BoardSection\Building_PG_Dt.aspx" />
+    <Content Include="Examination\BoardSection\Cetificates_Dt.aspx" />
+    <Content Include="Examination\BoardSection\Cetificates_Dtnew.aspx" />
+    <Content Include="Examination\BoardSection\FDR_Dt.aspx" />
+    <Content Include="Examination\BoardSection\Penalties_Dt.aspx" />
+    <Content Include="Examination\BoardSection\Popcertificate.aspx" />
+    <Content Include="Examination\BoardSection\SCHCertificateNew.aspx" />
+    <Content Include="Examination\BoardSection\School_TCDetails_Entry.aspx" />
+    <Content Include="Examination\BoardSection\Sections_Dt.aspx" />
+    <Content Include="Examination\BoardSection\SocietyDetails.aspx" />
+    <Content Include="Examination\BoardSection\Society_Clg_Mapping.aspx" />
+    <Content Include="Examination\Html\Content.aspx" />
+    <Content Include="Examination\Html\footer.htm" />
+    <Content Include="Examination\Html\Guru.aspx" />
+    <Content Include="Examination\Html\Header.aspx" />
+    <Content Include="Examination\Html\Header.htm" />
+    <Content Include="Examination\Include\AccordScript.js" />
+    <Content Include="Examination\Include\Admissions.js" />
+    <Content Include="Examination\Include\AHBRS.js" />
+    <Content Include="Examination\Include\ba.hashchange.js" />
+    <Content Include="Examination\Include\BACGBSectionStudents.js" />
+    <Content Include="Examination\Include\BCEGBSection.js" />
+    <Content Include="Examination\Include\BCSEMP.js" />
+    <Content Include="Examination\Include\BranchBlockRoom.js" />
+    <Content Include="Examination\Include\BranchBlockRoomEmp.js" />
+    <Content Include="Examination\Include\cgwisesubject.js" />
+    <Content Include="Examination\Include\ChangePlusMinus.js" />
+    <Content Include="Examination\Include\Combinations.js" />
+    <Content Include="Examination\Include\CommanFunctions.js" />
+    <Content Include="Examination\Include\ControlShowHideTimer.js" />
+    <Content Include="Examination\Include\CTExam.js" />
+    <Content Include="Examination\Include\DateValidation.js" />
+    <Content Include="Examination\Include\DateValidationBatch.js" />
+    <Content Include="Examination\Include\Dhtml\ColReorderWithResize.js" />
+    <Content Include="Examination\Include\Dhtml\ColumnFilterWidgets.js" />
+    <Content Include="Examination\Include\Dhtml\ColVis.js" />
+    <Content Include="Examination\Include\Dhtml\ColVis.min.js" />
+    <Content Include="Examination\Include\Dhtml\complete.js" />
+    <Content Include="Examination\Include\Dhtml\complete.min.js" />
+    <Content Include="Examination\Include\Dhtml\FixedColumns.js" />
+    <Content Include="Examination\Include\Dhtml\FixedColumns.min.js" />
+    <Content Include="Examination\Include\Dhtml\FixedHeader.js" />
+    <Content Include="Examination\Include\Dhtml\FixedHeader.min.js" />
+    <Content Include="Examination\Include\Dhtml\jquery-1.4.4.min.js" />
+    <Content Include="Examination\Include\Dhtml\jquery.dataTables.columnFilter.js" />
+    <Content Include="Examination\Include\Dhtml\jquery.dataTables.js" />
+    <Content Include="Examination\Include\Dhtml\jquery.dataTables.min.js" />
+    <Content Include="Examination\Include\Dhtml\jquery.dataTables.nightly.js" />
+    <Content Include="Examination\Include\Dhtml\jquery.js" />
+    <Content Include="Examination\Include\Dhtml\shCore.js" />
+    <Content Include="Examination\Include\Dhtml\TblHead.js" />
+    <Content Include="Examination\Include\DragnDrop\basicJS.js" />
+    <Content Include="Examination\Include\DragnDrop\brandingcode_new.js" />
+    <Content Include="Examination\Include\DragnDrop\buttons.js" />
+    <Content Include="Examination\Include\DragnDrop\cmp0.js" />
+    <Content Include="Examination\Include\DragnDrop\Cnlst.js" />
+    <Content Include="Examination\Include\DragnDrop\drag_drop.js" />
+    <Content Include="Examination\Include\DragnDrop\drag_dropmod.js" />
+    <Content Include="Examination\Include\DragnDrop\fc.js" />
+    <Content Include="Examination\Include\DragnDrop\fx.js" />
+    <Content Include="Examination\Include\DragnDrop\ga.js" />
+    <Content Include="Examination\Include\DragnDrop\JScript1.js" />
+    <Content Include="Examination\Include\DragnDrop\shBrushJScript.js" />
+    <Content Include="Examination\Include\DragnDrop\shBrushPhp.js" />
+    <Content Include="Examination\Include\DragnDrop\shBrushXml.js" />
+    <Content Include="Examination\Include\DragnDrop\shCore.js" />
+    <Content Include="Examination\Include\DragnDrop\webtrends.js" />
+    <Content Include="Examination\Include\EmployeeMaster.js" />
+    <Content Include="Examination\Include\ExamBranchStudent.js" />
+    <Content Include="Examination\Include\ExamMass.js" />
+    <Content Include="Examination\Include\ExamScheduleHome.js" />
+    <Content Include="Examination\Include\ExcelExporting.js" />
+    <Content Include="Examination\Include\FilePrint.js" />
+    <Content Include="Examination\Include\FirstDCreations.js" />
+    <Content Include="Examination\Include\GetClientPrinters.js" />
+    <Content Include="Examination\Include\GovtResult.js" />
+    <Content Include="Examination\Include\GridScript.js" />
+    <Content Include="Examination\Include\IEHistoryDelete.js" />
+    <Content Include="Examination\Include\JQTooltip\excanvas.js" />
+    <Content Include="Examination\Include\JQTooltip\jqtip.js" />
+    <Content Include="Examination\Include\JQTooltip\jquery.min.js" />
+    <Content Include="Examination\Include\JQTooltip\spinners.min.js" />
+    <Content Include="Examination\Include\JQTooltip\tipped.js" />
+    <Content Include="Examination\Include\JQTooltip\tip_balloon.js" />
+    <Content Include="Examination\Include\JQTooltip\tip_centerwindow.js" />
+    <Content Include="Examination\Include\JQTooltip\tip_followscroll.js" />
+    <Content Include="Examination\Include\JQTooltip\wz_tooltip.js" />
+    <Content Include="Examination\Include\jquery-1.2.6.min.js" />
+    <Content Include="Examination\Include\jquery.easing.1.3.js" />
+    <Content Include="Examination\Include\jquery.ibutton.js" />
+    <Content Include="Examination\Include\jquery.metadata.js" />
+    <Content Include="Examination\Include\jquery.min.js" />
+    <Content Include="Examination\Include\MarksRange.js" />
+    <Content Include="Examination\Include\MultiComboSelect\jquery-ui.min.js" />
+    <Content Include="Examination\Include\MultiComboSelect\jquery.js" />
+    <Content Include="Examination\Include\MultiComboSelect\jquery.multiselect.filter.js" />
+    <Content Include="Examination\Include\MultiComboSelect\jquery.multiselect.js" />
+    <Content Include="Examination\Include\MultiComboSelect\jquery.multiselect1.js" />
+    <Content Include="Examination\Include\MultiComboSelect\prettify.js" />
+    <Content Include="Examination\Include\MultiDropJQuery.js" />
+    <Content Include="Examination\Include\PanelSet.js" />
+    <Content Include="Examination\Include\PanelShowHide.js" />
+    <Content Include="Examination\Include\PCPresentCourse.js" />
+    <Content Include="Examination\Include\PCSubjects.js" />
+    <Content Include="Examination\Include\prettify.js" />
+    <Content Include="Examination\Include\PreviousCourse.js" />
+    <Content Include="Examination\Include\QPTTailor.js" />
+    <Content Include="Examination\Include\QuestionPType.js" />
+    <Content Include="Examination\Include\Report.js" />
+    <Content Include="Examination\Include\SectionEmploye.js" />
+    <Content Include="Examination\Include\Slide.js" />
+    <Content Include="Examination\Include\Slide\CreateGraph.js" />
+    <Content Include="Examination\Include\Slide\DynamicData.js" />
+    <Content Include="Examination\Include\Slide\exporting.js" />
+    <Content Include="Examination\Include\Slide\Graphics\close.png" />
+    <Content Include="Examination\Include\Slide\Graphics\closeX.png" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar-black-border.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar-text-buttons.png" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar-white-small.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar-white.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar2.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar3.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar4-hover.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\controlbar4.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\fullexpand.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\geckodimmer.png" />
+    <Content Include="Examination\Include\Slide\Graphics\icon.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\loader.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\loader.white.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\outlines\beveled.png" />
+    <Content Include="Examination\Include\Slide\Graphics\outlines\drop-shadow.png" />
+    <Content Include="Examination\Include\Slide\Graphics\outlines\glossy-dark.png" />
+    <Content Include="Examination\Include\Slide\Graphics\outlines\outer-glow.png" />
+    <Content Include="Examination\Include\Slide\Graphics\outlines\rounded-black.png" />
+    <Content Include="Examination\Include\Slide\Graphics\outlines\rounded-white.png" />
+    <Content Include="Examination\Include\Slide\Graphics\resize.gif" />
+    <Content Include="Examination\Include\Slide\Graphics\scrollarrows.png" />
+    <Content Include="Examination\Include\Slide\Graphics\zoomin.cur" />
+    <Content Include="Examination\Include\Slide\Graphics\zoomout.cur" />
+    <Content Include="Examination\Include\Slide\highcharts.js" />
+    <Content Include="Examination\Include\Slide\highslide-with-html.js" />
+    <Content Include="Examination\Include\Slide\highslide.css" />
+    <Content Include="Examination\Include\Slide\jquery-1.2.6.min.js" />
+    <Content Include="Examination\Include\Slide\jquery-1.4.2.min.js" />
+    <Content Include="Examination\Include\Slide\jquery.easyui.min.js" />
+    <Content Include="Examination\Include\Slide\jquery.min.js" />
+    <Content Include="Examination\Include\Slide\Slide.js" />
+    <Content Include="Examination\Include\Slide\style-table.js" />
+    <Content Include="Examination\Include\Slide\WithData.js" />
+    <Content Include="Examination\Include\StudentSection.js" />
+    <Content Include="Examination\Include\StudentSectionNew.js" />
+    <Content Include="Examination\Include\style-table.js" />
+    <Content Include="Examination\Include\SubMapViewDetails.js" />
+    <Content Include="Examination\Include\tableinnerhtmlget.js" />
+    <Content Include="Examination\Include\TableSort.js" />
+    <Content Include="Examination\Include\tablesorter2.0\docs.js" />
+    <Content Include="Examination\Include\tablesorter2.0\jquery-min.js" />
+    <Content Include="Examination\Include\tablesorter2.0\jquery.chili-2.2.js" />
+    <Content Include="Examination\Include\tablesorter2.0\jquery.ibutton.js" />
+    <Content Include="Examination\Include\tablesorter2.0\jquery.min.js" />
+    <Content Include="Examination\Include\tablesorter2.0\jquery.tablesorter.js" />
+    <Content Include="Examination\Include\tablesorter2.0\jquery.tablesorter.widgets.js" />
+    <Content Include="Examination\Include\tablesorter2.0\old2.0\chili-1.8b.js" />
+    <Content Include="Examination\Include\tablesorter2.0\old2.0\docs.js" />
+    <Content Include="Examination\Include\tablesorter2.0\old2.0\examples.js" />
+    <Content Include="Examination\Include\tablesorter2.0\old2.0\jquery-latest.js" />
+    <Content Include="Examination\Include\tablesorter2.0\old2.0\jquery.tablesorter.pager.js" />
+    <Content Include="Examination\Include\tablesorter2.0\old2.0\__jquery.tablesorter.js" />
+    <Content Include="Examination\Include\tablesorter2.0\recipes.js" />
+    <Content Include="Examination\Include\Test.js" />
+    <Content Include="Examination\Include\Topics.js" />
+    <Content Include="Examination\Include\Val.js" />
+    <Content Include="Examination\Include\Validate\jquery-1.6.min.js" />
+    <Content Include="Examination\Include\Validate\jquery.validationEngine-en.js" />
+    <Content Include="Examination\Include\Validate\jquery.validationEngine.js" />
+    <Content Include="Examination\Include\ValidationUserTo.js" />
+    <Content Include="Examination\Include\windowstatus.js" />
+    <Content Include="Examination\Include\xmlResult.js" />
+    <Content Include="Examination\KeyObjections\Objection_ExamDate_Creation.aspx" />
+    <Content Include="Examination\KeyObjections\Objection_ExamName_Entry.aspx" />
+    <Content Include="Examination\KeyObjections\Objection_ObjectionEntry.aspx" />
+    <Content Include="Examination\KeyObjections\Objection_ObjectionsEntry.aspx" />
+    <Content Include="Examination\KeyObjections\Report\Objection_FinalKey.aspx" />
+    <Content Include="Examination\KeyObjections\Report\Objection_ObjectionApproval.aspx" />
+    <Content Include="Examination\KeyObjections\Transactions\Exam_Objections_Approval.aspx" />
+    <Content Include="Examination\KeyObjections\Transactions\Exam_Objections_Entry.aspx" />
+    <Content Include="Examination\KeyObjections\Transactions\Exam_Objections_FinalKeyCorrections.aspx" />
+    <Content Include="Examination\KeyObjections\Transactions\Exam_Objections_Lock.aspx" />
+    <Content Include="Examination\KeyObjections\Transactions\Exam_Objections_Print.aspx" />
+    <Content Include="Examination\NoticeBoard\NoticeDisplay.aspx" />
+    <Content Include="Examination\NoticeBoard\NoticeDisplaySettings.aspx" />
+    <Content Include="Examination\NoticeBoard\NoticeEntry.aspx" />
+    <Content Include="Examination\NoticeBoard\NoticeView.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardCBSEHome.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardCBSETCReport.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardCCPreview.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardDetailsReport.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardDetailsReportAudit.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardDetailsReportChennai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardDetailsReportKarnataka.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardDetailsReportMumbai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardKarnatakaHome.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardkarnatakReport.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCCBSEPreview.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTcHome.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTcHomeDummy.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCHomeMumbai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTcHomeOthers.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCPreview.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCPreviewKarnataka.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCPreviewMumbai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCReport.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTcReportChennai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCReportMumbai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTcReportOthers.aspx" />
+    <Content Include="Examination\Reports\BoardReports\BoardTCReportTS.aspx" />
+    <Content Include="Examination\Reports\BoardReports\CCGenerateCBSE.aspx" />
+    <Content Include="Examination\Reports\BoardReports\CCGenerateMumbai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\CCGenerateNew.aspx" />
+    <Content Include="Examination\Reports\BoardReports\CCGenerateNewTS.aspx" />
+    <Content Include="Examination\Reports\BoardReports\ConductCertificate.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConductCertificate.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Examination\Reports\BoardReports\Dummy.aspx" />
+    <Content Include="Examination\Reports\BoardReports\MumbaiStudentMarksReport.aspx" />
+    <Content Include="Examination\Reports\BoardReports\PrintStyle.css" />
+    <Content Include="Examination\Reports\BoardReports\SchCertificatePerview.aspx" />
+    <Content Include="Examination\Reports\BoardReports\SchoolCCGeneratenew.aspx" />
+    <Content Include="Examination\Reports\BoardReports\SchoolCCPreview.aspx" />
+    <Content Include="Examination\Reports\BoardReports\SchoolCndCertNew.aspx" />
+    <Content Include="Examination\Reports\BoardReports\SchoolTcHome.aspx" />
+    <Content Include="Examination\Reports\BoardReports\SchStuCertificate.aspx" />
+    <Content Include="Examination\Reports\BoardReports\Script.js" />
+    <Content Include="Examination\Reports\BoardReports\Styles.css" />
+    <Content Include="Examination\Reports\BoardReports\TcGenerateCBSE.aspx" />
+    <Content Include="Examination\Reports\BoardReports\TcGenerateChennai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\TcGeneratekarnataka.aspx" />
+    <Content Include="Examination\Reports\BoardReports\TcGenerateMumbai.aspx" />
+    <Content Include="Examination\Reports\BoardReports\TcGenerateNew.aspx" />
+    <Content Include="Examination\Reports\BoardReports\TcGenerateNewTS.aspx" />
+    <Content Include="Examination\Reports\BoardReports\TCSummary.aspx" />
+    <Content Include="Examination\Reports\BoardReports\Templates\Narayana Logo.jpg" />
+    <Content Include="Examination\Reports\BoardReports\Templates\narayana-sricha.jpg" />
+    <Content Include="Examination\Reports\BoardReports\Templates\printer_2.png" />
+    <Content Include="Examination\Reports\BoardReports\Templates\sricha-naraya.jpg" />
+    <Content Include="Examination\Reports\BoardReports\Templates\underline.jpg" />
+    <Content Include="Examination\Reports\BoardReports\TransferCertificate.xsd" />
+    <Content Include="Examination\Reports\TextReports\CollegeCodeWiseReport.aspx" />
+    <Content Include="Examination\Reports\TextReports\PFDetails.aspx" />
+    <Content Include="Examination\Reports\TextReports\StudentBoardDetailsTxt.aspx" />
+    <Content Include="Examination\Reports\TextReports\TxtBoardReport.aspx" />
+    <Content Include="Examination\Reports\TextReports\TxtBoardReportAll.aspx" />
+    <Content Include="Examination\Security\ChangePassword.aspx" />
+    <Content Include="Examination\Security\CreateDynamicTree.aspx" />
+    <Content Include="Examination\Security\CreateNodes.aspx" />
+    <Content Include="Examination\Security\CreateOperators.aspx" />
+    <Content Include="Examination\Security\CreateOperatorsNew.aspx" />
+    <Content Include="Examination\Security\CreateTree.aspx" />
+    <Content Include="Examination\Security\CreateUsers.aspx" />
+    <Content Include="Examination\Security\DatabaseConnections.aspx" />
+    <Content Include="Examination\Security\EmpEBMapping.aspx" />
+    <Content Include="Examination\Security\EmpEbMappingView.aspx" />
+    <Content Include="Examination\Security\FrmSecurityMapping.aspx" />
+    <Content Include="Examination\Security\KeyObjCombSingle.aspx" />
+    <Content Include="Examination\Security\KeyObj_Combinations.aspx" />
+    <Content Include="Examination\Security\KeyObj_Comb_View.aspx" />
+    <Content Include="Examination\Security\MacRegister.aspx" />
+    <Content Include="Examination\Security\ModifyDynTree.aspx" />
+    <Content Include="Examination\Security\ModifyNodes.aspx" />
+    <Content Include="Examination\Security\ModifyTree.aspx" />
+    <Content Include="Examination\Security\MTMUserExamBranch.aspx" />
+    <Content Include="Examination\Security\NewForm.aspx" />
+    <Content Include="Examination\Security\PasswordFound.aspx" />
+    <Content Include="Examination\Security\StaffUserCombikeyView.aspx" />
+    <Content Include="Examination\Security\StaffUserWiseCombinationkey.aspx" />
+    <Content Include="Examination\Security\UserAccess.aspx" />
+    <Content Include="Examination\Security\UserCombikeyView.aspx" />
+    <Content Include="Examination\Security\UserDetailsPopUp.aspx" />
+    <Content Include="Examination\Security\UserIpBlock\UserIPHome.aspx" />
+    <Content Include="Examination\Security\UserIpBlock\UserWiseIPBlock.aspx" />
+    <Content Include="Examination\Security\UserPermit.aspx" />
+    <Content Include="Examination\Security\UserRegistrationTransfor.aspx" />
+    <Content Include="Examination\Security\UserTree.aspx" />
+    <Content Include="Examination\Security\UsertypewiseUserDetails.aspx" />
+    <Content Include="Examination\Security\UserWiseCombinationkey.aspx" />
+    <Content Include="Examination\Security\UserWiseSingleCombkey.aspx" />
+    <Content Include="Examination\Security\UserWiseSubbatchPermisionBatch.aspx" />
+    <Content Include="Examination\Security\UserWiseSubbatchPermisionSingle.aspx" />
+    <Content Include="Examination\Security\UserWiseSubbatchPermissionView.aspx" />
+    <Content Include="Examination\Security\ValidationsUsTo.aspx" />
+    <Content Include="Examination\Security\ViewAllUsers.aspx" />
+    <Content Include="Examination\UserControls\AddressInfo.ascx" />
+    <Content Include="Examination\UserControls\Common\CombinationSelectionInfo.ascx" />
+    <Content Include="Examination\UserControls\Common\DropdownCheckList.aspx" />
+    <Content Include="Examination\UserControls\Common\ExamsStudentInfoSelection.ascx" />
+    <Content Include="Examination\UserControls\Common\ReportMainSelection.ascx" />
+    <Content Include="Examination\UserControls\Common\VcDoZoneRegionSelection.ascx" />
+    <Content Include="Examination\UserControls\Include\init.js" />
+    <Content Include="Examination\UserControls\Include\moo.fx.js" />
+    <Content Include="Examination\UserControls\Include\moo.fx.pack.js" />
+    <Content Include="Examination\UserControls\Include\prototype.lite.js" />
+    <Content Include="Examination\UserControls\RandD\Tab\Images\greentab.jpg" />
+    <Content Include="Examination\UserControls\RandD\Tab\Scripts\init.js" />
+    <Content Include="Examination\UserControls\RandD\Tab\Scripts\moo.fx.js" />
+    <Content Include="Examination\UserControls\RandD\Tab\Scripts\moo.fx.pack.js" />
+    <Content Include="Examination\UserControls\RandD\Tab\Scripts\prototype.lite.js" />
+    <Content Include="Examination\UserControls\RandD\Tab\Scripts\tab.css" />
+    <Content Include="Examination\UserControls\RandD\Tab\tab1.html" />
+    <Content Include="Examination\UserControls\Reports\ExamInfoSelection.ascx" />
+    <Content Include="Examination\UserControls\ResultsControls\UCResultDetailsSelection.ascx" />
+    <Content Include="Examination\UserControls\Styles\NewReportsStyle.css" />
+    <Content Include="Global.asax" />
+    <Content Include="home.aspx" />
+    <Content Include="Images\AdmissionImages\admission_closer_force.gif" />
+    <Content Include="Images\AdmissionImages\admission_closer_normal.gif" />
+    <Content Include="Images\AdmissionImages\instalment.gif" />
+    <Content Include="Images\AdmissionImages\money_transfer.gif" />
+    <Content Include="Images\AdmissionImages\student_details.jpg" />
+    <Content Include="Images\AdmissionImages\student_payment.gif" />
+    <Content Include="Images\AdmissionImages\student_refund.gif" />
+    <Content Include="Images\AdmissionImages\student_transfer.gif" />
+    <Content Include="Images\AdmissionImages\submit.gif" />
+    <Content Include="Images\arrows.gif" />
+    <Content Include="Images\batchmode.gif" />
+    <Content Include="Images\but-bar.gif" />
+    <Content Include="Images\but-bg.gif" />
+    <Content Include="Images\but-lside.gif" />
+    <Content Include="Images\but-mside.gif" />
+    <Content Include="Images\but-rside.gif" />
+    <Content Include="Images\ButtonImages\add.jpg" />
+    <Content Include="Images\ButtonImages\batch_mode.jpg" />
+    <Content Include="Images\ButtonImages\cancel.jpg" />
+    <Content Include="Images\ButtonImages\clear.jpg" />
+    <Content Include="Images\ButtonImages\clsoe.jpg" />
+    <Content Include="Images\ButtonImages\Delete.jpg" />
+    <Content Include="Images\ButtonImages\go.jpg" />
+    <Content Include="Images\ButtonImages\new.jpg" />
+    <Content Include="Images\ButtonImages\Print_receipt.gif" />
+    <Content Include="Images\ButtonImages\Print_receipt.jpg" />
+    <Content Include="Images\ButtonImages\report.jpg" />
+    <Content Include="Images\ButtonImages\save.jpg" />
+    <Content Include="Images\ButtonImages\search-for-payments.jpg" />
+    <Content Include="Images\ButtonImages\search-for-refunds.jpg" />
+    <Content Include="Images\ButtonImages\search.jpg" />
+    <Content Include="Images\ButtonImages\single-mode.jpg" />
+    <Content Include="Images\ButtonImages\submit.gif" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\ExaminatinImages\22.jpg" />
+    <Content Include="Images\ExaminatinImages\23.jpg" />
+    <Content Include="Images\ExaminatinImages\24.jpg" />
+    <Content Include="Images\ExaminatinImages\25.jpg" />
+    <Content Include="Images\ExaminatinImages\Answers Comparision.jpg" />
+    <Content Include="Images\ExaminatinImages\Answers Upload.jpg" />
+    <Content Include="Images\ExaminatinImages\Answers_upload.jpg" />
+    <Content Include="Images\ExaminatinImages\batch update.jpg" />
+    <Content Include="Images\ExaminatinImages\Define Exam.jpg" />
+    <Content Include="Images\ExaminatinImages\Define_Exam.jpg" />
+    <Content Include="Images\ExaminatinImages\Descansupload.jpg" />
+    <Content Include="Images\ExaminatinImages\Errors List.jpg" />
+    <Content Include="Images\ExaminatinImages\Errors_list.jpg" />
+    <Content Include="Images\ExaminatinImages\Expected Exam.jpg" />
+    <Content Include="Images\ExaminatinImages\Expected_Exam.jpg" />
+    <Content Include="Images\ExaminatinImages\F-Fwd.jpg" />
+    <Content Include="Images\ExaminatinImages\F.jpg" />
+    <Content Include="Images\ExaminatinImages\Fwd.jpg" />
+    <Content Include="Images\ExaminatinImages\Get Details.jpg" />
+    <Content Include="Images\ExaminatinImages\Get_Details.jpg" />
+    <Content Include="Images\ExaminatinImages\Key Check.jpg" />
+    <Content Include="Images\ExaminatinImages\Key Entry.jpg" />
+    <Content Include="Images\ExaminatinImages\Key pdate.jpg" />
+    <Content Include="Images\ExaminatinImages\Key Upload.jpg" />
+    <Content Include="Images\ExaminatinImages\msg.GIF" />
+    <Content Include="Images\ExaminatinImages\Narayana_HomeLogo.jpg" />
+    <Content Include="Images\ExaminatinImages\Narayana_InnerLogo.jpg" />
+    <Content Include="Images\ExaminatinImages\new_alert.gif" />
+    <Content Include="Images\ExaminatinImages\Objansupload.jpg" />
+    <Content Include="Images\ExaminatinImages\Objansupload1.jpg" />
+    <Content Include="Images\ExaminatinImages\Personal details.jpg" />
+    <Content Include="Images\ExaminatinImages\Process.jpg" />
+    <Content Include="Images\ExaminatinImages\Questions.jpg" />
+    <Content Include="Images\ExaminatinImages\Qus.Paper comparision.jpg" />
+    <Content Include="Images\ExaminatinImages\Qus_Paper_Comparision.jpg" />
+    <Content Include="Images\ExaminatinImages\Refresh.jpg" />
+    <Content Include="Images\ExaminatinImages\Remove Students.jpg" />
+    <Content Include="Images\ExaminatinImages\Remove.jpg" />
+    <Content Include="Images\ExaminatinImages\Remove_Students.jpg" />
+    <Content Include="Images\ExaminatinImages\Results Comparision.jpg" />
+    <Content Include="Images\ExaminatinImages\Results update.jpg" />
+    <Content Include="Images\ExaminatinImages\Results Upload.jpg" />
+    <Content Include="Images\ExaminatinImages\Results_Comparision.jpg" />
+    <Content Include="Images\ExaminatinImages\Results_Upload.jpg" />
+    <Content Include="Images\ExaminatinImages\Rew.jpg" />
+    <Content Include="Images\ExaminatinImages\Room.jpg" />
+    <Content Include="Images\ExaminatinImages\Section.jpg" />
+    <Content Include="Images\ExaminatinImages\Show Log.jpg" />
+    <Content Include="Images\ExaminatinImages\Show_log.jpg" />
+    <Content Include="Images\ExaminatinImages\small_23 copy.jpg" />
+    <Content Include="Images\ExaminatinImages\submit.gif" />
+    <Content Include="Images\ExaminatinImages\Sub_Section.jpg" />
+    <Content Include="Images\ExaminatinImages\Tailoring Exam Set.jpg" />
+    <Content Include="Images\ExaminatinImages\Tailoring Q.P.jpg" />
+    <Content Include="Images\ExaminatinImages\Tailoring_Exam_mass.jpg" />
+    <Content Include="Images\ExaminatinImages\Tailoring_Qus_Paper.jpg" />
+    <Content Include="Images\ExaminatinImages\Upload_Qus_paper.jpg" />
+    <Content Include="Images\ExaminatinImages\View Results.jpg" />
+    <Content Include="Images\ExaminatinImages\View.jpg" />
+    <Content Include="Images\footer-top-inner.jpg" />
+    <Content Include="Images\freezeRow\uF033.png" />
+    <Content Include="Images\freezeRow\uF034.png" />
+    <Content Include="Images\freezeRow\uF035.png" />
+    <Content Include="Images\freezeRow\uF036.png" />
+    <Content Include="Images\fw_menu.js" />
+    <Content Include="Images\h-bgpic.jpg" />
+    <Content Include="Images\h-line.gif" />
+    <Content Include="Images\h-logo.jpg" />
+    <Content Include="Images\h-mainpic.jpg" />
+    <Content Include="Images\h-mainpic1.jpg" />
+    <Content Include="Images\h-narayana.gif" />
+    <Content Include="Images\h-nit.gif" />
+    <Content Include="Images\h-topbar1.jpg" />
+    <Content Include="Images\h-topbar2.jpg" />
+    <Content Include="Images\h-topbg.jpg" />
+    <Content Include="Images\hand.gif" />
+    <Content Include="Images\htmlreport.gif" />
+    <Content Include="Images\left-bg.jpg" />
+    <Content Include="Images\Login\btn-cancel.gif" />
+    <Content Include="Images\Login\btn-go.gif" />
+    <Content Include="Images\Login\btn-hsubmit.gif" />
+    <Content Include="Images\Login\btn-save.gif" />
+    <Content Include="Images\Login\btn-search.gif" />
+    <Content Include="Images\Login\css-table.css" />
+    <Content Include="Images\Login\diya effect.swf" />
+    <Content Include="Images\Login\GKStyleSheet_Report.css" />
+    <Content Include="Images\Login\greentab.jpg" />
+    <Content Include="Images\Login\login-bg-2010.jpg" />
+    <Content Include="Images\Login\login-bg.jpg" />
+    <Content Include="Images\Login\login-bg4.jpg" />
+    <Content Include="Images\Login\logo.jpg" />
+    <Content Include="Images\Login\ltop-corw.gif" />
+    <Content Include="Images\Login\NewStyle.css" />
+    <Content Include="Images\Login\nims.gif" />
+    <Content Include="Images\Login\rtop-corw.gif" />
+    <Content Include="Images\Login\show.gif" />
+    <Content Include="Images\Login\spacer.gif" />
+    <Content Include="Images\Login\StyleSheet.css" />
+    <Content Include="Images\Login\StyleSheet1.css" />
+    <Content Include="Images\Login\StyleSheet_Report.css" />
+    <Content Include="Images\Login\StyleSheet_Report_gk.css" />
+    <Content Include="Images\Login\table-lcorw.gif" />
+    <Content Include="Images\Login\table-rcorw.gif" />
+    <Content Include="Images\Login\Val.css" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logout.gif" />
+    <Content Include="Images\menu.js" />
+    <Content Include="Images\menu1.js" />
+    <Content Include="Images\menucontext.js" />
+    <Content Include="Images\MSGDown.gif" />
+    <Content Include="Images\narayana.jpg" />
+    <Content Include="Images\NewImages\a.gif" />
+    <Content Include="Images\NewImages\add.gif" />
+    <Content Include="Images\NewImages\AddCategory.gif" />
+    <Content Include="Images\NewImages\afmc_increase.jpg" />
+    <Content Include="Images\NewImages\ajax-loader07.gif" />
+    <Content Include="Images\NewImages\ajax-loaderbrown.gif" />
+    <Content Include="Images\NewImages\answersupload.gif" />
+    <Content Include="Images\NewImages\b.gif" />
+    <Content Include="Images\NewImages\back.gif" />
+    <Content Include="Images\NewImages\Bargraph.gif" />
+    <Content Include="Images\NewImages\batchmode.gif" />
+    <Content Include="Images\NewImages\batchupdate.gif" />
+    <Content Include="Images\NewImages\bullet.gif" />
+    <Content Include="Images\NewImages\c.gif" />
+    <Content Include="Images\NewImages\canc.gif" />
+    <Content Include="Images\NewImages\cancel.gif" />
+    <Content Include="Images\NewImages\close.gif" />
+    <Content Include="Images\NewImages\d.gif" />
+    <Content Include="Images\NewImages\Define_exam.gif" />
+    <Content Include="Images\NewImages\delete.gif" />
+    <Content Include="Images\NewImages\descansupload.gif" />
+    <Content Include="Images\NewImages\download.gif" />
+    <Content Include="Images\NewImages\DownSelect.GIF" />
+    <Content Include="Images\NewImages\DownSelectAll.GIF" />
+    <Content Include="Images\NewImages\draw-graph.gif" />
+    <Content Include="Images\NewImages\edit.gif" />
+    <Content Include="Images\NewImages\examinfo-h.jpg" />
+    <Content Include="Images\NewImages\examinfo-hover.jpg" />
+    <Content Include="Images\NewImages\examinfo.jpg" />
+    <Content Include="Images\NewImages\excel-template.gif" />
+    <Content Include="Images\NewImages\expectedexam.gif" />
+    <Content Include="Images\NewImages\finalkey-update.gif" />
+    <Content Include="Images\NewImages\general-info-h.jpg" />
+    <Content Include="Images\NewImages\general-info.jpg" />
+    <Content Include="Images\NewImages\getdetails.gif" />
+    <Content Include="Images\NewImages\getexambranch.gif" />
+    <Content Include="Images\NewImages\go.gif" />
+    <Content Include="Images\NewImages\hand.gif" />
+    <Content Include="Images\NewImages\ibutton-slider-default2.png" />
+    <Content Include="Images\NewImages\innerpage-bg.jpg" />
+    <Content Include="Images\NewImages\innerpage-bg1.jpg" />
+    <Content Include="Images\NewImages\innerpage-bg2.jpg" />
+    <Content Include="Images\NewImages\invaliddata.gif" />
+    <Content Include="Images\NewImages\keycheck.gif" />
+    <Content Include="Images\NewImages\keyentry.gif" />
+    <Content Include="Images\NewImages\keyupdate.gif" />
+    <Content Include="Images\NewImages\keyupload.gif" />
+    <Content Include="Images\NewImages\linegraph.gif" />
+    <Content Include="Images\NewImages\load.gif" />
+    <Content Include="Images\NewImages\load02.gif" />
+    <Content Include="Images\NewImages\loadingRound.gif" />
+    <Content Include="Images\NewImages\lock.gif" />
+    <Content Include="Images\NewImages\logo_test.gif" />
+    <Content Include="Images\NewImages\msg.gif" />
+    <Content Include="Images\NewImages\Narayana Logo.jpg.jpg" />
+    <Content Include="Images\NewImages\nil_mistakes.gif" />
+    <Content Include="Images\NewImages\obiansupload.gif" />
+    <Content Include="Images\NewImages\objansupload.gif" />
+    <Content Include="Images\NewImages\objectfileprocess.gif" />
+    <Content Include="Images\NewImages\objfileprocess.gif" />
+    <Content Include="Images\NewImages\outprocess.gif" />
+    <Content Include="Images\NewImages\prieview.gif" />
+    <Content Include="Images\NewImages\print.gif" />
+    <Content Include="Images\NewImages\process.gif" />
+    <Content Include="Images\NewImages\Questions.gif" />
+    <Content Include="Images\NewImages\receipt.gif" />
+    <Content Include="Images\NewImages\refresh.gif" />
+    <Content Include="Images\NewImages\Remove.gif" />
+    <Content Include="Images\NewImages\RemoveAll.gif" />
+    <Content Include="Images\NewImages\report-info-h.jpg" />
+    <Content Include="Images\NewImages\report-info.jpg" />
+    <Content Include="Images\NewImages\report.gif" />
+    <Content Include="Images\NewImages\reset.gif" />
+    <Content Include="Images\NewImages\resultcomparision.gif" />
+    <Content Include="Images\NewImages\resultupdate.gif" />
+    <Content Include="Images\NewImages\resultupload.gif" />
+    <Content Include="Images\NewImages\revert.gif" />
+    <Content Include="Images\NewImages\Sarvani Logo-1.jpg" />
+    <Content Include="Images\NewImages\Sarvani Logo.jpg" />
+    <Content Include="Images\NewImages\save.gif" />
+    <Content Include="Images\NewImages\search.gif" />
+    <Content Include="Images\NewImages\Select.gif" />
+    <Content Include="Images\NewImages\SelectAll.gif" />
+    <Content Include="Images\NewImages\send.gif" />
+    <Content Include="Images\NewImages\showcalendar.gif" />
+    <Content Include="Images\NewImages\showgrid.gif" />
+    <Content Include="Images\NewImages\showlog.gif" />
+    <Content Include="Images\NewImages\showorgcalendar.gif" />
+    <Content Include="Images\NewImages\show_selection.gif" />
+    <Content Include="Images\NewImages\singlemode1.gif" />
+    <Content Include="Images\NewImages\skies.jpg" />
+    <Content Include="Images\NewImages\snow.png" />
+    <Content Include="Images\NewImages\SPLITORDER.gif" />
+    <Content Include="Images\NewImages\student-info-h.jpg" />
+    <Content Include="Images\NewImages\student-info.jpg" />
+    <Content Include="Images\NewImages\studentwise.gif" />
+    <Content Include="Images\NewImages\subject-info-h.jpg" />
+    <Content Include="Images\NewImages\subject-info.jpg" />
+    <Content Include="Images\NewImages\sun.png" />
+    <Content Include="Images\NewImages\TailoringExamSet.gif" />
+    <Content Include="Images\NewImages\Tailoringquspaper.gif" />
+    <Content Include="Images\NewImages\tax.gif" />
+    <Content Include="Images\NewImages\taxcalc.gif" />
+    <Content Include="Images\NewImages\unlock.gif" />
+    <Content Include="Images\NewImages\update.gif" />
+    <Content Include="Images\NewImages\uploadefiles.gif" />
+    <Content Include="Images\NewImages\UpRemove.GIF" />
+    <Content Include="Images\NewImages\UpRemoveAll.GIF" />
+    <Content Include="Images\NewImages\view-qpaper.gif" />
+    <Content Include="Images\NewImages\viewresults.gif" />
+    <Content Include="Images\NewImages\viewtempresults.gif" />
+    <Content Include="Images\NewImages\weekendoff.gif" />
+    <Content Include="Images\NewImages\weekendon.gif" />
+    <Content Include="Images\ng.jpg" />
+    <Content Include="Images\noticeArrow.gif" />
+    <Content Include="Images\report.gif" />
+    <Content Include="Images\right-bg.jpg" />
+    <Content Include="Images\singlemode.gif" />
+    <Content Include="Images\Style.css" />
+    <Content Include="Images\submit.gif" />
+    <Content Include="Images\top-image.jpg" />
+    <Content Include="Images\topbg.gif" />
+    <Content Include="Modules\ts_picker.js" />
+    <Content Include="RD\CommitT.aspx" />
+    <Content Include="RD\DataGridRelation.aspx" />
+    <Content Include="RD\MacRD.aspx" />
+    <Content Include="RD\MailsRd.aspx" />
+    <Content Include="RD\Results.aspx" />
+    <Content Include="RD\SSC.aspx" />
+    <Content Include="RedirectPage.aspx" />
+    <Content Include="Styles\docs.css" />
+    <Content Include="Styles\easyui.css" />
+    <Content Include="Styles\example.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\jquery.ibutton.css" />
+    <Content Include="Styles\jquery.ibutton12.css" />
+    <Content Include="Styles\jquery.ibuttonMod.css" />
+    <Content Include="Styles\MultiComboSelect\animated-overlay.gif" />
+    <Content Include="Styles\MultiComboSelect\jquery-ui.css" />
+    <Content Include="Styles\MultiComboSelect\jquery.multiselect.css" />
+    <Content Include="Styles\MultiComboSelect\jquery.multiselect.filter.css" />
+    <Content Include="Styles\MultiComboSelect\prettify.css" />
+    <Content Include="Styles\MultiComboSelect\style.css" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\MultiComboSelect\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Styles\MultiComboSelect\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\MultiComboSelect\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\MultiComboSelect\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\MultiComboSelect\ui-icons_888888_256x240.png" />
+    <Content Include="Styles\MultiComboSelect\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\MultiComboSelect\ui-icons_ed9f26_256x240.png" />
+    <Content Include="Styles\MultiComboSelect\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\NimsStyle.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\StyleSheet_ASR.css" />
+    <Content Include="Styles\stylev.css" />
+    <Content Include="Styles\StyleVenu.css" />
+    <Content Include="Styles\tablesorter2.0\jq.css" />
+    <Content Include="Styles\tablesorter2.0\old2.0\jq.css" />
+    <Content Include="Styles\tablesorter2.0\old2.0\style.css" />
+    <Content Include="Styles\tablesorter2.0\theme.blue.css" />
+    <Content Include="Styles\validate\template.css" />
+    <Content Include="Styles\validate\validationEngine.jquery.css" />
+    <Content Include="Web.config" />
+    <Content Include="welcome.htm" />
+    <EmbeddedResource Include="Examination\BankChallan\BANKCHLLAN.aspx.resx">
+      <DependentUpon>BANKCHLLAN.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BankChallan\BANKSTUDENTCHALLAN1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BANKSTUDENTCHALLAN11.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BankChallan\ICICIBANKCHALLAN1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ICICIBANKCHALLAN11.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\BoardDetailsEntry.aspx.resx">
+      <DependentUpon>BoardDetailsEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Certificates\TransferCertificate.aspx.resx">
+      <DependentUpon>TransferCertificate.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Masters\BoardCollegeEntry.aspx.resx">
+      <DependentUpon>BoardCollegeEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Masters\BoardCollegeHome.aspx.resx">
+      <DependentUpon>BoardCollegeHome.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Masters\MastersBatch.aspx.resx">
+      <DependentUpon>MastersBatch.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Masters\MastersHome.aspx.resx">
+      <DependentUpon>MastersHome.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Masters\MasterSingle.aspx.resx">
+      <DependentUpon>MasterSingle.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Reports\BoardReport-1.aspx.resx">
+      <DependentUpon>BoardReport-1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Reports\BOARDRPT1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BOARDRPT11.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Reports\BOARDRPT21.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BOARDRPT211.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Reports\BOARDRPT31.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BOARDRPT311.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Reports\BOARDRPTS.aspx.resx">
+      <DependentUpon>BOARDRPTS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\AcademicYearExambranchBoardcollegeMapping.aspx.resx">
+      <DependentUpon>AcademicYearExambranchBoardcollegeMapping.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\AcaEbBrdColMapBatch.aspx.resx">
+      <DependentUpon>AcaEbBrdColMapBatch.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntry.aspx.resx">
+      <DependentUpon>StudentBoardDetailsEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryDummy.aspx.resx">
+      <DependentUpon>StudentBoardDetailsEntryDummy.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryNew.aspx.resx">
+      <DependentUpon>StudentBoardDetailsEntryNew.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\StudentBoardDetailsEntryTC.aspx.resx">
+      <DependentUpon>StudentBoardDetailsEntryTC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\StudentTCRemarksEntry.aspx.resx">
+      <DependentUpon>StudentTCRemarksEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardEnrollments\Transactions\TcRequetAprolls.aspx.resx">
+      <DependentUpon>TcRequetAprolls.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\Affilation_Dt.aspx.resx">
+      <DependentUpon>Affilation_Dt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\Building_PG_Dt.aspx.resx">
+      <DependentUpon>Building_PG_Dt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\Cetificates_Dt.aspx.resx">
+      <DependentUpon>Cetificates_Dt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\Cetificates_Dtnew.aspx.resx">
+      <DependentUpon>Cetificates_Dtnew.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\FDR_Dt.aspx.resx">
+      <DependentUpon>FDR_Dt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\Penalties_Dt.aspx.resx">
+      <DependentUpon>Penalties_Dt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\School_TCDetails_Entry.aspx.resx">
+      <DependentUpon>School_TCDetails_Entry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\Sections_Dt.aspx.resx">
+      <DependentUpon>Sections_Dt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\SocietyDetails.aspx.resx">
+      <DependentUpon>SocietyDetails.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\BoardSection\Society_Clg_Mapping.aspx.resx">
+      <DependentUpon>Society_Clg_Mapping.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Html\Content.aspx.resx">
+      <DependentUpon>Content.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Html\Guru.aspx.resx">
+      <DependentUpon>Guru.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Html\Header.aspx.resx">
+      <DependentUpon>Header.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Objection_ExamDate_Creation.aspx.resx">
+      <DependentUpon>Objection_ExamDate_Creation.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Objection_ExamName_Entry.aspx.resx">
+      <DependentUpon>Objection_ExamName_Entry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Objection_ObjectionEntry.aspx.resx">
+      <DependentUpon>Objection_ObjectionEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Objection_ObjectionsEntry.aspx.resx">
+      <DependentUpon>Objection_ObjectionsEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Report\Objection_FinalKey.aspx.resx">
+      <DependentUpon>Objection_FinalKey.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Report\Objection_ObjectionApproval.aspx.resx">
+      <DependentUpon>Objection_ObjectionApproval.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Transactions\Exam_Objections_Approval.aspx.resx">
+      <DependentUpon>Exam_Objections_Approval.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Transactions\Exam_Objections_Entry.aspx.resx">
+      <DependentUpon>Exam_Objections_Entry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Transactions\Exam_Objections_FinalKeyCorrections.aspx.resx">
+      <DependentUpon>Exam_Objections_FinalKeyCorrections.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Transactions\Exam_Objections_Lock.aspx.resx">
+      <DependentUpon>Exam_Objections_Lock.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\KeyObjections\Transactions\Exam_Objections_Print.aspx.resx">
+      <DependentUpon>Exam_Objections_Print.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\NoticeBoard\NoticeDisplay.aspx.resx">
+      <DependentUpon>NoticeDisplay.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\NoticeBoard\NoticeDisplaySettings.aspx.resx">
+      <DependentUpon>NoticeDisplaySettings.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\NoticeBoard\NoticeEntry.aspx.resx">
+      <DependentUpon>NoticeEntry.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\NoticeBoard\NoticeView.aspx.resx">
+      <DependentUpon>NoticeView.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\BoardCCPreview.aspx.resx">
+      <DependentUpon>BoardCCPreview.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\BoardTcHome.aspx.resx">
+      <DependentUpon>BoardTcHome.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\BoardTcHomeDummy.aspx.resx">
+      <DependentUpon>BoardTcHomeDummy.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\BoardTCPreview.aspx.resx">
+      <DependentUpon>BoardTCPreview.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\BoardTCReport.aspx.resx">
+      <DependentUpon>BoardTCReport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\BoardTCReportTS.aspx.resx">
+      <DependentUpon>BoardTCReportTS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\CCGenerateNew.aspx.resx">
+      <DependentUpon>CCGenerateNew.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\CCGenerateNewTS.aspx.resx">
+      <DependentUpon>CCGenerateNewTS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\ConductcertK3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConductcertK3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\Dummy.aspx.resx">
+      <DependentUpon>Dummy.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\SchCertificatePerview.aspx.resx">
+      <DependentUpon>SchCertificatePerview.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\SchConductcertK3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SchConductcertK33.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\SchoolCCGeneratenew.aspx.resx">
+      <DependentUpon>SchoolCCGeneratenew.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\SchoolCCPreview.aspx.resx">
+      <DependentUpon>SchoolCCPreview.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\SchoolCndCertNew.aspx.resx">
+      <DependentUpon>SchoolCndCertNew.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\SchoolTcHome.aspx.resx">
+      <DependentUpon>SchoolTcHome.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\SchStuCertificate.aspx.resx">
+      <DependentUpon>SchStuCertificate.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\TcGenerateNew.aspx.resx">
+      <DependentUpon>TcGenerateNew.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\TcGenerateNewTS.aspx.resx">
+      <DependentUpon>TcGenerateNewTS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\TCRPTv2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TCRPTv21.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\BoardReports\TCSummary.aspx.resx">
+      <DependentUpon>TCSummary.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\TextReports\PFDetails.aspx.resx">
+      <DependentUpon>PFDetails.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\TextReports\StudentBoardDetailsTxt.aspx.resx">
+      <DependentUpon>StudentBoardDetailsTxt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\TextReports\TxtBoardReport.aspx.resx">
+      <DependentUpon>TxtBoardReport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Reports\TextReports\TxtBoardReportAll.aspx.resx">
+      <DependentUpon>TxtBoardReportAll.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\ChangePassword.aspx.resx">
+      <DependentUpon>ChangePassword.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\CreateDynamicTree.aspx.resx">
+      <DependentUpon>CreateDynamicTree.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\CreateNodes.aspx.resx">
+      <DependentUpon>CreateNodes.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\CreateOperators.aspx.resx">
+      <DependentUpon>CreateOperators.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\CreateOperatorsNew.aspx.resx">
+      <DependentUpon>CreateOperatorsNew.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\CreateTree.aspx.resx">
+      <DependentUpon>CreateTree.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\CreateUsers.aspx.resx">
+      <DependentUpon>CreateUsers.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\DatabaseConnections.aspx.resx">
+      <DependentUpon>DatabaseConnections.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\EmpEBMapping.aspx.resx">
+      <DependentUpon>EmpEBMapping.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\EmpEbMappingView.aspx.resx">
+      <DependentUpon>EmpEbMappingView.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\FrmSecurityMapping.aspx.resx">
+      <DependentUpon>FrmSecurityMapping.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\KeyObjCombSingle.aspx.resx">
+      <DependentUpon>KeyObjCombSingle.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\KeyObj_Combinations.aspx.resx">
+      <DependentUpon>KeyObj_Combinations.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\KeyObj_Comb_View.aspx.resx">
+      <DependentUpon>KeyObj_Comb_View.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\MacRegister.aspx.resx">
+      <DependentUpon>MacRegister.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\ModifyDynTree.aspx.resx">
+      <DependentUpon>ModifyDynTree.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\ModifyNodes.aspx.resx">
+      <DependentUpon>ModifyNodes.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\ModifyTree.aspx.resx">
+      <DependentUpon>ModifyTree.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\MTMUserExamBranch.aspx.resx">
+      <DependentUpon>MTMUserExamBranch.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\NewForm.aspx.resx">
+      <DependentUpon>NewForm.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\PasswordFound.aspx.resx">
+      <DependentUpon>PasswordFound.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\StaffUserCombikeyView.aspx.resx">
+      <DependentUpon>StaffUserCombikeyView.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\StaffUserWiseCombinationkey.aspx.resx">
+      <DependentUpon>StaffUserWiseCombinationkey.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserAccess.aspx.resx">
+      <DependentUpon>UserAccess.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserCombikeyView.aspx.resx">
+      <DependentUpon>UserCombikeyView.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserDetailsPopUp.aspx.resx">
+      <DependentUpon>UserDetailsPopUp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserIpBlock\UserIPHome.aspx.resx">
+      <DependentUpon>UserIPHome.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserIpBlock\UserWiseIPBlock.aspx.resx">
+      <DependentUpon>UserWiseIPBlock.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserPermit.aspx.resx">
+      <DependentUpon>UserPermit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserRegistrationTransfor.aspx.resx">
+      <DependentUpon>UserRegistrationTransfor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserTree.aspx.resx">
+      <DependentUpon>UserTree.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UsertypewiseUserDetails.aspx.resx">
+      <DependentUpon>UsertypewiseUserDetails.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserWiseCombinationkey.aspx.resx">
+      <DependentUpon>UserWiseCombinationkey.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserWiseSingleCombkey.aspx.resx">
+      <DependentUpon>UserWiseSingleCombkey.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserWiseSubbatchPermisionBatch.aspx.resx">
+      <DependentUpon>UserWiseSubbatchPermisionBatch.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserWiseSubbatchPermisionSingle.aspx.resx">
+      <DependentUpon>UserWiseSubbatchPermisionSingle.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\UserWiseSubbatchPermissionView.aspx.resx">
+      <DependentUpon>UserWiseSubbatchPermissionView.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\ValidationsUsTo.aspx.resx">
+      <DependentUpon>ValidationsUsTo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\Security\ViewAllUsers.aspx.resx">
+      <DependentUpon>ViewAllUsers.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\AddressInfo.ascx.resx">
+      <DependentUpon>AddressInfo.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\Common\CombinationSelectionInfo.ascx.resx">
+      <DependentUpon>CombinationSelectionInfo.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\Common\DropdownCheckList.aspx.resx">
+      <DependentUpon>DropdownCheckList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\Common\ExamsStudentInfoSelection.ascx.resx">
+      <DependentUpon>ExamsStudentInfoSelection.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\Common\ReportMainSelection.ascx.resx">
+      <DependentUpon>ReportMainSelection.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\Common\VcDoZoneRegionSelection.ascx.resx">
+      <DependentUpon>VcDoZoneRegionSelection.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\Reports\ExamInfoSelection.ascx.resx">
+      <DependentUpon>ExamInfoSelection.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examination\UserControls\ResultsControls\UCResultDetailsSelection.ascx.resx">
+      <DependentUpon>UCResultDetailsSelection.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.aspx.resx">
+      <DependentUpon>home.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\CommitT.aspx.resx">
+      <DependentUpon>CommitT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\DataGridRelation.aspx.resx">
+      <DependentUpon>DataGridRelation.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\MacRD.aspx.resx">
+      <DependentUpon>MacRD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\MailsRd.aspx.resx">
+      <DependentUpon>MailsRd.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Results.aspx.resx">
+      <DependentUpon>Results.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\SSC.aspx.resx">
+      <DependentUpon>SSC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedirectPage.aspx.resx">
+      <DependentUpon>RedirectPage.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Complaints\Analysis.xls" />
+    <None Include="Examination\BankChallan\BANKSTUDCOPY.xsx">
+      <DependentUpon>BANKSTUDCOPY.xsd</DependentUpon>
+    </None>
+    <None Include="Examination\BoardEnrollments\Reports\BOARDREPORT.xsx">
+      <DependentUpon>BOARDREPORT.xsd</DependentUpon>
+    </None>
+    <None Include="Examination\Include\Slide\Graphics\outlines\Thumbs.db" />
+    <None Include="Examination\Include\Slide\Graphics\Thumbs.db" />
+    <None Include="Examination\Reports\BoardReports\ConductCertificate.xsx">
+      <DependentUpon>ConductCertificate.xsd</DependentUpon>
+    </None>
+    <Content Include="Examination\Reports\BoardReports\TransferCertificate.xsc">
+      <DependentUpon>TransferCertificate.xsd</DependentUpon>
+    </Content>
+    <Content Include="Examination\Reports\BoardReports\TransferCertificate.xss">
+      <DependentUpon>TransferCertificate.xsd</DependentUpon>
+    </Content>
+    <None Include="Examination\Reports\BoardReports\TransferCertificate.xsx">
+      <DependentUpon>TransferCertificate.xsd</DependentUpon>
+    </None>
+    <None Include="Examination\Security\step.pdf" />
+    <None Include="My Project\PublishProfiles\CollegeBoard.pubxml" />
+    <None Include="WorkStatus\Exam Modifications.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Examination\BankChallan\AXISBANK\" />
+    <Folder Include="Examination\BankChallan\ICICIBANK\" />
+    <Folder Include="Examination\Scripts\HtmlReports\" />
+    <Folder Include="Examination\Scripts\Objective Script\" />
+    <Folder Include="Examination\Security\BACKENDENRTY\" />
+    <Folder Include="Examination\UserControls\Images\" />
+    <Folder Include="Images\Images-Sp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CollegeBoardDLL\CollegeBoardDLL.vbproj">
+      <Project>{76415b82-bb79-4f3c-83cb-c0d83c3f433b}</Project>
+      <Name>CollegeBoardDLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="CommonDLL\CommonDLL.vbproj">
+      <Project>{b526d31e-ba63-42c6-a45e-3d7ed7d1f21b}</Project>
+      <Name>CommonDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v12.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56003</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/CollegeBoard</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

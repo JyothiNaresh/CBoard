@@ -1,0 +1,213 @@
+
+
+A:link
+{
+	text-decoration: none;
+	color: #3333cc;
+}
+
+A:visited
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+A:active
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+
+A:hover
+{
+	text-decoration: underline;
+	color: #3333cc;
+}
+
+
+body
+{
+	SCROLLBAR-FACE-COLOR: #FFFFFF; SCROLLBAR-HIGHLIGHT-COLOR:#5A9DF2;
+	SCROLLBAR-SHADOW-COLOR: #5A9DF2; SCROLLBAR-3DLIGHT-COLOR:#186FB3;
+	SCROLLBAR-TRACK-COLOR:#F5FAFE; 
+	SCROLLBAR-DARKSHADOW-COLOR:#F5FAFE; 
+	SCROLLBAR-BASE-COLOR: #F5FAFE;
+	color: Blue;
+	background-color: #F5FAFE;
+	font-family: Arial;
+	font-size: small;
+}
+
+
+.textbox
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #000000;
+}
+
+.button
+{
+	font-weight: Bold;
+	font-size: x-small;
+	font-family: Arial;
+	background-color: "#337FCF";
+	color: White;
+}
+
+
+.DropDownList
+{
+	font-family: Arial;
+	font-size: smaller;
+	height: 30px;
+}
+
+.Label
+{
+	font-size: 9pt;
+}
+
+
+.Heading
+{
+	font-size: small;
+	color: White;
+	background-color: "#337FCF";
+}
+
+
+.Panel
+{
+	background-color: "#F5FAFE";
+	border-color: Black;
+}
+
+.DataGrid
+{
+	background-color: "#E0E0E0";
+	font-size: 8.5pt;
+	color: blue;
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+	border-color: Black;
+}
+
+.HeadStyle
+{
+	background-color: PaleTurquoise;
+	font-weight: Bold;
+}
+
+.DisplayText
+{
+	border-style: none;
+	background-color: PaleTurquoise;
+	font-weight: bold;
+}
+
+.bodyASR
+{
+	color: White;
+	font-family: Arial;
+	background-color: font-size:small;
+}
+.HeadStyle_bold_bigASR
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: White;
+	background: "#337FCF";
+	text-decoration: none;
+}
+
+.buttonASR
+{
+	font-weight: Bold;
+	font-size: x-small;
+	font-family: Arial;
+	background-color: MidnightBlue;
+	color: White;
+}
+
+.textboxASR
+{
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	font-size: 8.5pt;
+	border-left: #000000 1px solid;
+	color: Blue;
+	border-bottom: #000000 1px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.TextboxGrid
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+	background-color: "#E0E0E0";
+	color: DodgerBlue;
+	text-decoration: none;
+}
+
+.gridtextbox
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #0000ff;
+	text-decoration: none;
+	border: 1px solid #000000;
+}
+
+.LabelASR
+{
+	font-size: 9pt;
+}
+
+.GridHeading
+{
+	background: Navy;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: White;
+	text-decoration: none;
+}
+.GridPagerStyle
+{
+	background: #D1CBCB;
+	font-style: normal;
+	vertical-align: middle;
+}
+.GridtextboxASR
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #000000;
+	text-decoration: none;
+	border: 0px solid #000000;
+}
+.HrASR
+{
+	color: Navy;
+	text-align: justify;
+}
+
+
+.NaiduText
+{
+	color: #0000ff;
+	font-size: 8.5pt;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-decoration: none;
+}

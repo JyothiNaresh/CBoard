@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CollegeBoard", "CollegeBoard.vbproj", "{73CC0908-D7A8-442A-A752-1623E17FF87C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CollegeBoardDLL", "CollegeBoardDLL\CollegeBoardDLL.vbproj", "{76415B82-BB79-4F3C-83CB-C0D83C3F433B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CommonDLL", "CommonDLL\CommonDLL.vbproj", "{B526D31E-BA63-42C6-A45E-3D7ED7D1F21B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.0.16.20:8080/tfs/collegeboard
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CollegeBoard.vbproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = CollegeBoardDLL\\CollegeBoardDLL.vbproj
+		SccProjectName2 = CollegeBoardDLL
+		SccLocalPath2 = CollegeBoardDLL
+		SccProjectUniqueName3 = CommonDLL\\CommonDLL.vbproj
+		SccProjectName3 = CommonDLL
+		SccLocalPath3 = CommonDLL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73CC0908-D7A8-442A-A752-1623E17FF87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CC0908-D7A8-442A-A752-1623E17FF87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CC0908-D7A8-442A-A752-1623E17FF87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CC0908-D7A8-442A-A752-1623E17FF87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76415B82-BB79-4F3C-83CB-C0D83C3F433B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76415B82-BB79-4F3C-83CB-C0D83C3F433B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76415B82-BB79-4F3C-83CB-C0D83C3F433B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B526D31E-BA63-42C6-A45E-3D7ED7D1F21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B526D31E-BA63-42C6-A45E-3D7ED7D1F21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B526D31E-BA63-42C6-A45E-3D7ED7D1F21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

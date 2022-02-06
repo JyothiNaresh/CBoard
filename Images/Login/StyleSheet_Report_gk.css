@@ -1,0 +1,248 @@
+body
+{
+	SCROLLBAR-FACE-COLOR: #ebded6;
+	margin: 0px;
+	SCROLLBAR-ARROW-COLOR: black;
+	
+}
+td {
+	font-family: Verdana;
+	font-size: 11px;
+}
+.DarkColor {
+	background-color: #B8773D;
+}
+.LightColor {
+	background-color: #EBDED6;
+}
+.Heading {
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #B8773D;
+	text-transform: uppercase;
+
+}
+.MainTable {
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+.TopLine {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E3C9B1;
+}
+.FormNo {
+	font-family: Verdana;
+	font-size: 11px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #B8773D;
+	border-right-color: #B8773D;
+	border-bottom-color: #B8773D;
+	border-left-color: #B8773D;
+	height: 17px;
+	width: 125px;
+	margin-right: 2px;
+	margin-left: 5px;
+
+
+}
+.FormNoLable {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #B8773D;
+}
+.SubHeading {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+
+}
+.TdBorder {
+	background-color: #E4C7AD;
+	height: 4px;
+}
+.TableBorder {
+	border: 1px solid #B8773D;
+}
+.Lables {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #663300;
+	text-align: left;
+	background-color: #EBDED6;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CDC3BD;
+}
+.ControlsBg {
+	background-color: #F2ECE9;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CDC3BD;
+	padding-left: 3px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+
+
+
+}
+.SubHeading1 {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-left: 11px;
+	background-color: #B8773D;
+
+
+}
+input {
+	border: 1px solid #7F9DB9;
+	height: 17px;
+	width: 50px;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #91521A;
+
+
+
+}
+select {
+	background-color: #F2EEEB;
+	height: 15px;
+	width: 120px;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #91521A;
+	border: 1px solid #7F9DB9;
+
+}
+.HomeText {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #764D27;
+	text-align: right;
+	padding-right: 2px;
+	height: 20px;
+
+
+
+}
+frame {
+	cursor: crosshair;
+}
+
+
+
+.StusubjdetailsTable{
+	padding-left:0px;padding-top:0px;padding-bottom:0px;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #EBF4FC;
+	border-color: #1c9ccd;
+	
+	}
+
+.Stusubjdetails{
+	padding-left:8px;padding-top:8px;padding-bottom:8px;
+	background-color:#EBF4FC ;
+	vertical-align:middle;
+	height:20px;
+	
+	}
+	
+.Stusubjdetailstot{
+	padding-left:8px;padding-top:5px;padding-bottom:7px;
+	background-color:#EBF4FC ;
+	vertical-align:middle;
+	font-size:small;
+	font-weight:bold;
+	height:20px;
+	}
+
+
+
+.GridMain
+{
+	 font-size:11px; 
+	 font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	 border-width: 0px;
+	 background-color:#EBDED6;
+	 color:  #663300;
+	 border-color:  #EBDED6;
+	 padding:3; 
+	
+}
+
+.GridHeader
+{
+	 font-family:Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	 font-size: 11px;
+	 font-style: normal;
+	 font-variant: normal;
+ 	 text-decoration: none;
+ 	 height:10pt;	
+ 	 background-color: #B8773D;
+ 	 color: #FFFFFF;
+ 	 font-weight:bold;
+	
+}
+
+.GridItem
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	font-size:11px;
+	color:#663300; 					
+	text-decoration:none;
+	line-height: 10pt;
+	background-color: #EBDED6;	
+	
+}
+
+
+.GridAlternateItem
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	font-size:11px;
+	color: #663300; 		
+	text-decoration:none;
+	line-height: 10pt;
+	background-color:#EBDED6;	
+}
+
+.GridPager
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif,Tahoma, Georgia, Tahoma, Sans-serif, Helvetica;
+	font-size:11px;
+	color:  #FFFFFF;				
+	text-decoration:none;
+	line-height: 10pt;
+	background-color: #B8773D;
+	text-align:center;
+	font-weight:bold;
+		
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TransferCertificate" targetNamespace="http://tempuri.org/TransferCertificate.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TransferCertificate.xsd"
+	xmlns:mstns="http://tempuri.org/TransferCertificate.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TransferCertificate" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TransferCertificate">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="certificateno" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="admno" type="xs:string" minOccurs="0" />
+							<xs:element name="colname" type="xs:string" minOccurs="0" />
+							<xs:element name="TCADDR1" type="xs:string" minOccurs="0" />
+							<xs:element name="TCADDR2" type="xs:string" minOccurs="0" />
+							<xs:element name="pupilname" type="xs:string" minOccurs="0" />
+							<xs:element name="parentname" type="xs:string" minOccurs="0" />
+							<xs:element name="mothername" type="xs:string" minOccurs="0" />
+							<xs:element name="religion" type="xs:string" minOccurs="0" />
+							<xs:element name="caste" type="xs:string" minOccurs="0" />
+							<xs:element name="dob" type="xs:string" minOccurs="0" />
+							<xs:element name="DOBWORDS" type="xs:string" minOccurs="0" />
+							<xs:element name="Pass" type="xs:string" minOccurs="0" />
+							<xs:element name="firtlang" type="xs:string" minOccurs="0" />
+							<xs:element name="seclang" type="xs:string" minOccurs="0" />
+							<xs:element name="part3" type="xs:string" minOccurs="0" />
+							<xs:element name="mothertangue" type="xs:string" minOccurs="0" />
+							<xs:element name="admdt" type="xs:string" minOccurs="0" />
+							<xs:element name="classyear" type="xs:string" minOccurs="0" />
+							<xs:element name="point11" type="xs:string" minOccurs="0" />
+							<xs:element name="point12" type="xs:string" minOccurs="0" />
+							<!--<xs:element name="point13a" type="xs:string" minOccurs="0" />
+							<xs:element name="point13b" type="xs:string" minOccurs="0" />-->
+							<xs:element name="mole1" type="xs:string" minOccurs="0" />
+							<xs:element name="mole2" type="xs:string" minOccurs="0" />
+							<xs:element name="point15" type="xs:string" minOccurs="0" />
+							<xs:element name="point16" type="xs:string" minOccurs="0" />
+							<xs:element name="conduct" type="xs:string" minOccurs="0" />
+							<xs:element name="documentid" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="RCNO" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

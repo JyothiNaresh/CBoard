@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.6030</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76415B82-BB79-4F3C-83CB-C0D83C3F433B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>CollegeBoardDLL</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>CollegeBoardDLL</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CollegeBoardDLL.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CollegeBoardDLL.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDLL\CommonDLL.vbproj">
+      <Name>CommonDLL</Name>
+      <Project>{B526D31E-BA63-42C6-A45E-3D7ED7D1F21B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CommonDLL" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OracleClient" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ClsComboBoxFilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ClsCommonFillings.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ClsRptComboBoxFilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DoRegionZone.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\LogModule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\OutProcessClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\RptUtility.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Utility.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsBankChallan.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsBCEGBS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsBCSEMP.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsBoarddt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsBoardEnrollment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsBranchBlockRoom.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsBranchBlockRoomEmp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsCourseWiseExams.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsEBSectionLock.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsEmployee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsExamBranchs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsExamBranchStudent.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsExamBranch_Hostel_Block.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsFacultyAllotment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsfirstDCreation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsGroupActivity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsIITQpaper.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsPreCouSub.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsReservationStudents.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsSectionEmploye.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsStudentSection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsStudentSubSection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ClsTopic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Masters\ProgramIC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportsNew\ClsFillControls.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\ClsReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\ClsReportClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportTransactions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Result\IpeProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Result\Masters.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Result\ResultProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\UserClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\UserIPBlock.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\WebTree.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsActivity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsADM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsAgenda.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsCGWS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsCoc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsDefineExam.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsExamCategory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsExamMass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsExamSchedule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsExamSetQpt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsGovtExamResult.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsMarksEntry.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsMessageBoard.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsNewTrans.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsOpinionPole.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsPCPC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsPersonalDetails.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsQPTTailor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsQuestionPType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsReportTypeMap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsSchool_TC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsStuBoardMap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\ClsTeacher.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\NOETransaction.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\NTRStudent.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\PocketMoneyDLL.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\StudentDetailsChangeNew.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\StudentInformationUpdate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\StuOpinionPoll.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Valution\NewProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
